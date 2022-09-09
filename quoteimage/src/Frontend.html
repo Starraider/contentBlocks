@@ -1,0 +1,34 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<f:layout name="Default" />
+
+<f:section name="Main">
+
+    <f:asset.css identifier="content-block-quoteimage" href="CB:quoteimage/dist/Frontend.css" />
+    <f:asset.script identifier="content-block-quoteimage" src="CB:quoteimage/dist/Frontend.js" />
+
+    <div class="container quoteimage bg-{bgcolor}">
+
+        <div class="row">
+            <div class="col-2  quote-image-wrap">
+                <f:for each="{authorimage}" as="img">
+                    <f:image class="quote-image" image="{img}" width="120" />
+                </f:for>
+            </div>
+            <div class="col-10 quote-text">
+
+                <figure class="text-center">
+                    <blockquote class="blockquote">
+                        <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{quote}</f:format.html>
+                    </blockquote>
+                    <figcaption class="blockquote-footer">
+                        <cite title="Source Title">{author}</cite>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+
+</f:section>
+
+</html>

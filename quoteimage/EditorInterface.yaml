@@ -1,0 +1,38 @@
+group: common
+fields:
+    - identifier: quote
+      type: Textarea
+      properties:
+          max: ''
+          rows: '5'
+          cols: '100'
+          default: ''
+          placeholder: ''
+          required: true
+          trim: true
+          enableRichtext: true
+    - identifier: author
+      type: Text
+      properties:
+          max: ''
+          size: ''
+          default: ''
+          placeholder: ''
+          required: false
+          trim: true
+          autocomplete: false
+    - identifier: authorimage
+      type: Image
+      properties:
+          minItems: '0'
+          maxItems: '1'
+    - identifier: bgcolor
+      type: Select
+      properties:
+          prependLabel: ''
+          items:
+              primary: primary
+              secondary: secondary
+              tertiary: tertiary
+              quaternary: quaternary
+              dark: dark

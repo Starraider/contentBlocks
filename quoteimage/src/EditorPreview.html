@@ -1,0 +1,16 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:be="http://typo3.org/ns/TYPO3/CMS/Backend/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:asset.css identifier="content-block-quoteimage-be" href="CB:quoteimage/dist/EditorPreview.css" />
+
+<be:link.editRecord uid="{data.uid}" table="tt_content" id="element-tt_content-{data.uid}">
+    <div class="quoteimage">
+
+        <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{quote}</f:format.html>
+        <p>{author}</p>
+        <f:debug>{authorimage}</f:debug>
+        <p>{bgcolor}</p>
+
+    </div>
+</be:link.editRecord>
+
+</html>
