@@ -1,14 +1,18 @@
 {
-    "name": "typo3-contentblocks/quoteimage",
-    "description": "Content block created by Content Block Builder.",
-    "type": "typo3-contentblock",
-    "license": "GPL-2.0-or-later",
-    "authors": [
-        {
-            "name": "Structured Content Initiative"
-        }
-    ],
-    "require": {
-        "typo3-contentblocks/contentblocks-reg-api": "*"
-    }
+	"name": "typo3-contentblocks/quoteimage",
+	"description": "Quote with image",
+	"type": "typo3-contentblock",
+	"license": "GPL-2.0-or-later",
+	"version": "1.0.0",
+	"authors": [
+		{
+			"name": "Sven Kalbhenn",
+			"email": "sven@skom.de",
+			"homepage": "https://www.skom.de",
+			"role": "Developer"
+		}
+	],
+	"require": {
+		"typo3-contentblocks/contentblocks-reg-api": "*"
+	}
 }
