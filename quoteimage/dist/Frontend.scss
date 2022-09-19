@@ -1,0 +1,28 @@
+/* quote */
+.quote {
+    background-image: url('Images/quotation-marks.svg');
+    background-position: 97% 3%;
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+    padding: 1.5rem;
+    &__authorimage {
+        width: 150px;
+        height: 150px;
+    }
+    &__image {
+        margin: 0 auto;
+        margin-top: 0;
+        border-radius: 100%;
+        overflow: hidden;
+    }
+    &__author {
+
+    }
+    &__text {
+        border: none !important;
+        padding: 0 !important;
+        p {
+            font-size: inherit;
+        }
+    }
+}

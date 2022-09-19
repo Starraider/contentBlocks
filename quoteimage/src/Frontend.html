@@ -1,4 +1,5 @@
-<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:schema="http://typo3.org/ns/Brotkrueml/Schema/ViewHelpers" data-namespace-typo3-fluid="true">
 
 <f:layout name="Default" />
 
@@ -7,27 +8,38 @@
     <f:asset.css identifier="content-block-quoteimage" href="CB:quoteimage/dist/Frontend.css" />
     <f:asset.script identifier="content-block-quoteimage" src="CB:quoteimage/dist/Frontend.js" />
 
-    <div class="container quoteimage bg-{bgcolor}">
+    <schema:type.creativeWork text="{quote -> f:format.stripTags()}">
+        <schema:type.person -as="author" name="{author}" jobTitle="{role}">
+            <f:for each="{authorimage}" as="img">
+                <schema:property -as="image" value="{f:uri.image(image:img, absolute:1)}" />
+            </f:for>
+        </schema:type.person>
+    </schema:type.creativeWork>
 
+
+
+    <figure class="quote container text-bg-{bgcolor}">
         <div class="row">
-            <div class="col-2  quote-image-wrap">
+            <div class="quote__authorimage col-3 text-center">
                 <f:for each="{authorimage}" as="img">
-                    <f:image class="quote-image" image="{img}" width="120" />
+                    <f:image class="quote__image" image="{img}" width="150" />
                 </f:for>
             </div>
-            <div class="col-10 quote-text">
-
-                <figure class="text-center">
-                    <blockquote class="blockquote">
-                        <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{quote}</f:format.html>
-                    </blockquote>
-                    <figcaption class="blockquote-footer">
-                        <cite title="Source Title">{author}</cite>
-                    </figcaption>
-                </figure>
+            <div class="col-9">
+                <blockquote class="quote__text">
+                    <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{quote}</f:format.html>
+                </blockquote>
+                <figcaption class="quote__author">
+                    <div class="quote__name">{author}</div>
+                    <div class="quote__jobtitle">
+                        <small>{role}</small>
+                    </div>
+                </figcaption>
             </div>
-        </div>
-    </div>
+    </figure>
+
+
+
 
 </f:section>
 
