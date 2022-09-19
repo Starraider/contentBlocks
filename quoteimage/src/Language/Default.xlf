@@ -29,6 +29,14 @@
                 <source>Author of the quote</source>
             </trans-unit>
 
+			<trans-unit id="typo3-contentblocks.quoteimage.role.label" xml:space="preserve">
+                <source>Role</source>
+            </trans-unit>
+
+            <trans-unit id="typo3-contentblocks.quoteimage.role.description" xml:space="preserve">
+                <source>Role/Profession of Author</source>
+            </trans-unit>
+
             <trans-unit id="typo3-contentblocks.quoteimage.authorimage.label" xml:space="preserve">
                 <source>Image of the author</source>
             </trans-unit>
