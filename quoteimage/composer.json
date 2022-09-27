@@ -13,6 +13,7 @@
 		}
 	],
 	"require": {
-		"typo3-contentblocks/contentblocks-reg-api": "*"
+		"typo3-contentblocks/contentblocks-reg-api": "*",
+		"brotkrueml/schema": "^2.5"
 	}
 }
