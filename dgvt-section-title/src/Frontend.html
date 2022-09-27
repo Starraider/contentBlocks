@@ -1,0 +1,31 @@
+{namespace v=FluidTYPO3\Vhs\ViewHelpers}
+
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<f:layout name="Default"/>
+
+<f:section name="Main">
+    <f:asset.css identifier="content-block-dgvt-section-title-be" href="CB:dgvt-section-title/dist/EditorPreview.css"/>
+    <f:asset.css identifier="content-block-dgvt-section-title" href="CB:dgvt-section-title/dist/Frontend.css"/>
+    <f:asset.script identifier="content-block-dgvt-section-title" src="CB:dgvt-section-title/dist/Frontend.js"/>
+
+    <div class="dgvt-section-title orientation--{alignment}">
+
+        <div class="frame-container frame-container-default">
+            <div class="frame-inner">
+                <div class="dgvt-section-title__inner">
+                    <v:tag name="{type}" class="dgvt-section-title__headline">
+                        {heading}
+                    </v:tag>
+                    <f:if condition="url">
+                        <f:link.typolink parameter="{url}" class="dgvt-section-title__more">{linkText}</f:link.typolink>
+                    </f:if>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</f:section>
+</html>
