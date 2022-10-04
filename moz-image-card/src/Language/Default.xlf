@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<xliff version="1.0">
+    <file datatype="plaintext"
+            original="messages"
+            source-language="en"
+            product-name="text">
+        <header/>
+        <body>
+            <trans-unit id="typo3-contentblocks.moz-image-card.title" xml:space="preserve">
+                <source>Bildkarte mit Texthover</source>
+            </trans-unit>
+            <trans-unit id="typo3-contentblocks.moz-image-card.description" xml:space="preserve">
+                <source>Bildkarte mit Texthover - moz-image-card created by Content Block Builder.</source>
+            </trans-unit>
+
+            <trans-unit id="typo3-contentblocks.moz-image-card.image.label" xml:space="preserve">
+                <source>Hintergrundbild</source>
+            </trans-unit>
+
+            <trans-unit id="typo3-contentblocks.moz-image-card.image.description" xml:space="preserve">
+                <source></source>
+            </trans-unit>
+
+            <trans-unit id="typo3-contentblocks.moz-image-card.title.label" xml:space="preserve">
+                <source>Überschrift</source>
+            </trans-unit>
+
+            <trans-unit id="typo3-contentblocks.moz-image-card.title.description" xml:space="preserve">
+                <source></source>
+            </trans-unit>
+
+        </body>
+    </file>
+</xliff>

@@ -1,0 +1,16 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:be="http://typo3.org/ns/TYPO3/CMS/Backend/ViewHelpers" data-namespace-typo3-fluid="true">
+    <f:asset.css identifier="content-block-moz-image-card-be" href="CB:moz-image-card/dist/EditorPreview.css"/>
+
+    <be:link.editRecord uid="{data.uid}" table="tt_content" id="element-tt_content-{data.uid}">
+        <div class="moz-image-card">
+
+
+            <f:for each="{image}" as="i">
+                <f:image image="{i}" />
+            </f:for>
+            <h4>{title}</h4>
+            <p>{desc}</p>
+
+        </div>
+    </be:link.editRecord>
+</html>

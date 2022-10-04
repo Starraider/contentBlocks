@@ -70,10 +70,7 @@ fields:
     - identifier: hasSocialshare
       type: Checkbox
       properties:
-        default: 'yes'
+        default: ''
+        required: false
         items:
-          'yes': 'Auf Sozialen Netzwerken teilen?'
-        prependLabel: 'Layout wählen'
-        required: true
-        properties:
-          required: true
+          'yes': ' Auf Sozialen Netzwerken teilen?'
