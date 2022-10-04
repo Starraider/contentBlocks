@@ -1,5 +1,5 @@
 {
-    "name": "typo3-contentblocks/dgvt-section-title",
+    "name": "typo3-contentblocks/moz-section-title",
     "description": "Custom style headings for the DGVT company",
     "type": "typo3-contentblock",
     "license": "GPL-2.0-or-later",

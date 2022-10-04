@@ -1,0 +1,126 @@
+/**
+ * Covers multiple variations of the page header
+ * Changes on the layout should be applied here
+ *
+ * Note: please use global css vars wherever it makes sense
+ *
+ * @author: Darius Mozgiel | mozgiel.de
+ */
+/**
+ * used as workaround to get breakpoints for contentBlock
+ * Better: Find a more solid and non-redundant solution
+ */
+/* Breakpoints
+-------------------------------------------------- */
+.moz-header {
+  background: var(--moz-header-bg);
+  align-items: center;
+}
+@media (min-width: 992px) {
+  .moz-header {
+    display: flex;
+  }
+}
+.moz-header > * {
+  flex-basis: 100%;
+}
+.moz-header__skyline {
+  display: block;
+  font-weight: bold;
+  color: var(--moz-header-skyline-color);
+  font-size: var(--moz-header-skyline-size);
+}
+.moz-header__title p {
+  margin-bottom: 0;
+}
+.moz-header__content {
+  padding: 2rem 1rem;
+}
+@media (min-width: 992px) {
+  .moz-header__content {
+    padding: 2rem;
+  }
+}
+@media (max-width: 992px) {
+  .moz-header__content br {
+    display: none;
+  }
+}
+.moz-header__share {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 10px;
+  font-size: 2rem;
+}
+.moz-header__share .icon__wrapper {
+  color: var(--moz-header--fullwidth-color);
+}
+@media (min-width: 992px) {
+  .moz-header__share {
+    min-width: 200px;
+  }
+}
+.moz-header.moz-header--has-image {
+  padding: 0;
+}
+.moz-header.moz-header--has-image.moz-header--halfwidth.moz-header__title {
+  max-width: var(--moz-header-content-maxwidth);
+}
+.moz-header.moz-header--has-image .moz-header__img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+.moz-header.moz-header--has-image.moz-header--fullwidth {
+  background: none !important;
+  height: var(--moz-header-height--mobile);
+  border-bottom-left-radius: var(--moz-header-border-radius);
+  position: relative;
+  overflow: hidden;
+}
+@media (min-width: 992px) {
+  .moz-header.moz-header--has-image.moz-header--fullwidth {
+    height: var(--moz-header-height);
+  }
+}
+.moz-header.moz-header--has-image.moz-header--fullwidth .moz-header__img-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.moz-header.moz-header--has-image.moz-header--fullwidth .moz-header__content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  padding: 2rem;
+  background: var(--primary--transparent);
+  color: var(--moz-header--fullwidth-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.moz-header.moz-header--has-image.moz-header--fullwidth .moz-header__content .moz-header__skyline,
+.moz-header.moz-header--has-image.moz-header--fullwidth .moz-header__content .moz-header__title {
+  color: var(--moz-header--fullwidth-color);
+}
+.moz-header.moz-header--has-image.moz-header--fullwidth .moz-header__content .moz-header__share {
+  display: flex;
+  justify-content: end;
+}
+.moz-header.moz-header--has-image.moz-header--fullwidth .moz-header__content .moz-header__share .moz-icon__wrapper {
+  font-size: 1.75rem;
+  padding: 1.3rem;
+  background: var(--secondary);
+  color: var(--primary);
+}
+.moz-header.moz-header--without-image {
+  border-bottom-left-radius: var(--moz-header-border-radius);
+}
+
+/*# sourceMappingURL=Frontend.css.map */

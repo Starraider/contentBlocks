@@ -1,4 +1,4 @@
-group: common
+group: bausteine
 fields:
     -
         identifier: skyline
@@ -54,3 +54,15 @@ fields:
         properties:
             minItems: ''
             maxItems: '1'
+    -
+      identifier: layout
+      type: Select
+      properties:
+        default: 'halfwidth'
+        items:
+          'halfwidth': '50/50 Aufteilung'
+          'fullwidth': 'volle Breite'
+        prependLabel: 'Layout wählen'
+        required: true
+        properties:
+          required: true

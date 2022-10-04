@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<xliff version="1.0">
+    <file datatype="plaintext"
+            original="messages"
+            source-language="en"
+            product-name="text">
+        <header/>
+        <body>
+            <trans-unit id="typo3-contentblocks.moz-header.title" xml:space="preserve">
+                <source>DGVT Header</source>
+            </trans-unit>
+            <trans-unit id="typo3-contentblocks.moz-header.description" xml:space="preserve">
+                <source>DGVT Header - moz-header created by Content Block Builder.</source>
+            </trans-unit>
+
+            <trans-unit id="typo3-contentblocks.moz-header.skyline.label" xml:space="preserve">
+                <source>Skyline</source>
+            </trans-unit>
+
+            <trans-unit id="typo3-contentblocks.moz-header.skyline.description" xml:space="preserve">
+                <source></source>
+            </trans-unit>
+
+            <trans-unit id="typo3-contentblocks.moz-header.title.label" xml:space="preserve">
+                <source></source>
+            </trans-unit>
+
+            <trans-unit id="typo3-contentblocks.moz-header.title.description" xml:space="preserve">
+                <source>Überschrift</source>
+            </trans-unit>
+
+            <trans-unit id="typo3-contentblocks.moz-header.buttonLink.label" xml:space="preserve">
+                <source>Button-Link</source>
+            </trans-unit>
+
+            <trans-unit id="typo3-contentblocks.moz-header.buttonLink.description" xml:space="preserve">
+                <source>Button-Link</source>
+            </trans-unit>
+
+            <trans-unit id="typo3-contentblocks.moz-header.buttonText.label" xml:space="preserve">
+                <source>Button-Text</source>
+            </trans-unit>
+
+            <trans-unit id="typo3-contentblocks.moz-header.buttonText.description" xml:space="preserve">
+                <source></source>
+            </trans-unit>
+
+            <trans-unit id="typo3-contentblocks.moz-header.image.label" xml:space="preserve">
+                <source>Header-Bild</source>
+            </trans-unit>
+
+            <trans-unit id="typo3-contentblocks.moz-header.image.description" xml:space="preserve">
+                <source>max. 1 Bild-Element</source>
+            </trans-unit>
+
+        </body>
+    </file>
+</xliff>

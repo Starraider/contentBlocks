@@ -1,4 +1,4 @@
-group: common
+group: bausteine
 fields:
   - identifier: heading
     type: Text

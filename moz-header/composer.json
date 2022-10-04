@@ -1,5 +1,5 @@
 {
-    "name": "typo3-contentblocks/dgvt-header",
+    "name": "typo3-contentblocks/moz-header",
     "description": "Content block created by Content Block Builder.",
     "type": "typo3-contentblock",
     "license": "GPL-2.0-or-later",
