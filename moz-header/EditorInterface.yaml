@@ -66,3 +66,14 @@ fields:
         required: true
         properties:
           required: true
+
+    - identifier: hasSocialshare
+      type: Checkbox
+      properties:
+        default: 'yes'
+        items:
+          'yes': 'Auf Sozialen Netzwerken teilen?'
+        prependLabel: 'Layout wählen'
+        required: true
+        properties:
+          required: true

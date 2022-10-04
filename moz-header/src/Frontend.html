@@ -1,9 +1,7 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 
     <f:layout name="Default" />
-
     <f:section name="Main">
-
         <f:asset.css identifier="content-block-moz-header-be" href="CB:moz-header/dist/EditorPreview.css"/>
         <f:asset.css identifier="content-block-moz-header" href="CB:moz-header/dist/Frontend.css"/>
         <f:asset.script identifier="content-block-moz-header" src="CB:moz-header/dist/Frontend.js"/>
@@ -33,7 +31,7 @@
                     </f:if>
                 </div>
 
-                <f:if condition="true">
+                <f:if condition="{hasSocialshare} == 1">
                     <f:render partial="Share"></f:render>
                 </f:if>
             </div>
