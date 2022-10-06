@@ -1,6 +1,6 @@
 {
-    "name": "typo3-contentblocks/moz-image-card",
-    "description": "Content block created by Content Block Builder.",
+    "name": "typo3-contentblocks/moz-icon",
+    "description": "Custom Icon style for card layouts",
     "type": "typo3-contentblock",
     "license": "GPL-2.0-or-later",
 	"authors": [
