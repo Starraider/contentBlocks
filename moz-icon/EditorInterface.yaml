@@ -1,0 +1,10 @@
+group: common
+fields:
+    -
+        identifier: icon
+        type: Select
+        properties:
+            prependLabel: ''
+            items:
+                twitter: ' Twitter'
+                facebook: ' Facebook'

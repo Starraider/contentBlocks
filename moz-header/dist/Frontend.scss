@@ -1,0 +1,150 @@
+/**
+ * Covers multiple variations of the page header
+ * Changes on the layout should be applied here
+ *
+ * Note: please use global css vars wherever it makes sense
+ *
+ * @author: Darius Mozgiel | mozgiel.de
+ */
+
+@import '../../../../../packages/dgvtbase/Resources/Public/Scss/breakpoints';
+
+.moz-header {
+
+    background: var(--moz-header-bg);
+
+    align-items: center;
+    //flex-direction: column;
+
+    @media(min-width: $md) {
+        display: flex;
+    }
+
+    > * {
+        flex-basis: 100%;
+    }
+
+    &__skyline {
+        display: block;
+        font-weight: bold;
+        color: var(--moz-header-skyline-color);
+        font-size: var(--moz-header-skyline-size);
+    }
+
+    &__title {
+        p {
+            margin-bottom: 0;
+        }
+    }
+
+    &__content {
+
+        padding: 2rem 1rem;
+
+        @media(min-width: $md) {
+            padding: 2rem;
+        }
+
+        // hide line breaks on mobile view
+        @media(max-width: $md) {
+            br {
+                display: none;
+            }
+        }
+    }
+
+    &__share {
+        display: flex;
+        gap: .5rem;
+
+        margin-top: 10px;
+        font-size: 2rem;
+
+        .icon__wrapper {
+            color: var(--moz-header--fullwidth-color);
+        }
+
+        @media(min-width: $md) {
+            min-width: 200px;
+        }
+    }
+
+    // image variants
+    &.moz-header--has-image {
+
+        padding: 0;
+
+        // image inside variation
+        &.moz-header--halfwidth {
+            &.moz-header__title {
+                max-width: var(--moz-header-content-maxwidth);
+            }
+        }
+
+        .moz-header__img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+        }
+
+        // full width image background variation
+        &.moz-header--fullwidth {
+            background: none !important;
+            height: var(--moz-header-height--mobile);
+            border-bottom-left-radius: var(--moz-header-border-radius);
+
+            @media(min-width: $md) {
+                height: var(--moz-header-height);
+            }
+            position: relative;
+            overflow: hidden;
+
+            .moz-header__img-wrapper {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+            }
+
+            .moz-header__content {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: auto;
+                padding: 2rem;
+                background: var(--primary--transparent);
+                color: var(--moz-header--fullwidth-color);
+
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .moz-header__skyline,
+                .moz-header__title {
+                    color: var(--moz-header--fullwidth-color);
+                }
+
+                .moz-header__share {
+                    display: flex;
+                    justify-content: end;
+
+                    .moz-icon__wrapper {
+                        font-size: 1.75rem;
+                        padding: 1.3rem;
+                        background: var(--secondary);
+                        color: var(--primary);
+                    }
+                }
+            }
+        }
+    }
+
+    // no image variants
+    &.moz-header--without-image {
+        border-bottom-left-radius: var(--moz-header-border-radius);
+    }
+}

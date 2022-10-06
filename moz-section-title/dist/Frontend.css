@@ -1,0 +1,39 @@
+.moz-section-title .frame-inner {
+  display: flex;
+  justify-content: start;
+}
+
+.moz-section-title.orientation--center .frame-inner {
+  justify-content: center;
+}
+
+.moz-section-title__inner {
+  position: relative;
+}
+
+.moz-section-title__headline {
+  position: relative;
+  display: block;
+}
+
+.moz-section-title__headline:after {
+  content: "";
+  display: block;
+  width: 100vh;
+  height: 4px;
+  background: black;
+  position: absolute;
+  right: 0;
+  bottom: -10px;
+}
+
+.moz-section-title__more {
+  position: relative;
+  top: 10px;
+  display: flex;
+  justify-content: end;
+}
+
+/*# sourceMappingURL=Frontend.css.map */
+
+/*# sourceMappingURL=Frontend.css.map */
