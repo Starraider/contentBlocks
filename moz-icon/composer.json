@@ -1,8 +1,9 @@
 {
     "name": "typo3-contentblocks/moz-icon",
-    "description": "Custom Icon style for card layouts",
+    "description": "[WIP] Custom Icon style for card layouts",
     "type": "typo3-contentblock",
     "license": "GPL-2.0-or-later",
+	"version": "1.0.0",
 	"authors": [
 		{
 			"name": "Darius Mozgiel",
