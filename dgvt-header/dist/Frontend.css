@@ -8,6 +8,7 @@
   background: var(--dgvt-header-bg);
   align-items: center;
 }
+
 @media (min-width: 992px) {
   .dgvt-header {
     display: flex;
@@ -16,15 +17,18 @@
 .dgvt-header > * {
   flex-basis: 100%;
 }
+
 .dgvt-header__skyline {
   display: block;
   font-weight: bold;
   color: var(--dgvt-header-skyline-color);
   font-size: var(--dgvt-header-skyline-size);
 }
+
 .dgvt-header__content {
   padding: 2rem 1rem;
 }
+
 @media (min-width: 992px) {
   .dgvt-header__content {
     padding: 2rem;
@@ -41,5 +45,7 @@
   display: block;
   object-fit: cover;
 }
+
+/*# sourceMappingURL=Frontend.css.map */
 
 /*# sourceMappingURL=Frontend.css.map */
