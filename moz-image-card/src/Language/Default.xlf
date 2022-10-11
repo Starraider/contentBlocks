@@ -7,10 +7,10 @@
         <header/>
         <body>
             <trans-unit id="typo3-contentblocks.moz-image-card.title" xml:space="preserve">
-                <source>Bildkarte mit Texthover</source>
+                <source>DGVT Teaser</source>
             </trans-unit>
             <trans-unit id="typo3-contentblocks.moz-image-card.description" xml:space="preserve">
-                <source>Bildkarte mit Texthover - moz-image-card created by Content Block Builder.</source>
+                <source>DGVT Teaser - Bild, Titel und Hovertext - zwei Größen</source>
             </trans-unit>
 
             <trans-unit id="typo3-contentblocks.moz-image-card.image.label" xml:space="preserve">

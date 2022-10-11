@@ -93,17 +93,24 @@
         }
 
         .moz-image-card__content {
-            padding: .5rem 1rem;
-            height: 70px; //TODO variable
+            height: auto;
+            padding: 1rem;
+
+            @media( min-width: $md ) {
+                padding: .5rem 1rem;
+                height: 70px; // TODO variable
+            }
 
             h1,h2,h3,h4  {
                 font-size: 1rem;
             }
         }
 
-        &:hover {
-            .moz-image-card__content {
-                height: 100%;
+        @media( min-width: $md ) {
+            &:hover {
+                .moz-image-card__content {
+                    height: 100%;
+                }
             }
         }
     }
