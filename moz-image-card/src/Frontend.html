@@ -8,7 +8,7 @@
         <f:asset.css identifier="content-block-moz-image-card" href="CB:moz-image-card/dist/Frontend.css"/>
         <f:asset.script identifier="content-block-moz-image-card" src="CB:moz-image-card/dist/Frontend.js"/>
 
-        <f:link.typolink parameter="{link}" class="moz-image-card card">
+        <f:link.typolink parameter="{link}" class="moz-image-card card card--{f:if(condition: '{isSmall}', then: 'is-small', else: 'is-default')}">
 
 
             <f:for each="{image}" as="i">

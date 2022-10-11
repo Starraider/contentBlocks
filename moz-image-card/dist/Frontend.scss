@@ -17,15 +17,16 @@
 @import '../../../../../packages/dgvtbase/Resources/Public/Scss/breakpoints';
 
 .moz-image-card {
-
     position: relative;
     overflow: hidden;
     border-radius: var(--moz-header-border-radius) 0 var(--moz-header-border-radius) var(--moz-header-border-radius);
 
     &__img {
+        min-height: 250px; // TODO variable
         display: block;
         max-width: 100%;
         height: auto;
+        object-fit: cover;
     }
 
     &:hover {
@@ -47,7 +48,7 @@
         @media( min-width: $md ) {
             position: absolute;
             width: 100%;
-            height: 100px;
+            height: 100px; //TODO variable
             bottom: 0; //calc( -100% + 80px );
             left: 0;
             z-index: 1;
@@ -84,5 +85,28 @@
             };
         }
     }
+
+    &.card--is-small {
+
+        .moz-image-card__img {
+            min-height: 220px; // TODO variable
+        }
+
+        .moz-image-card__content {
+            padding: .5rem 1rem;
+            height: 70px; //TODO variable
+
+            h1,h2,h3,h4  {
+                font-size: 1rem;
+            }
+        }
+
+        &:hover {
+            .moz-image-card__content {
+                height: 100%;
+            }
+        }
+    }
 }
+
 
