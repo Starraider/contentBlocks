@@ -29,6 +29,14 @@ fields:
         trim: true
         enableRichtext: false
 
+    - identifier: isSmall
+      type: Checkbox
+      properties:
+        default: ''
+        required: false
+        items:
+          'yes': 'Soll die kleine Container-Ansicht verwendet werden?'
+
     - identifier: link
       type: Url
       linkPopup:
