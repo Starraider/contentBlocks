@@ -1,0 +1,43 @@
+group: common
+fields:
+  -
+    identifier: height
+    type: Text
+    properties:
+      max: ''
+      size: '150'
+      default: ''
+      placeholder: ''
+      required: false
+      trim: true
+      autocomplete: false
+  -
+    identifier: showControlsInside
+    type: Checkbox
+    properties:
+      default: ''
+      required: false
+      items:
+        'yes': 'Sollen Steuerungselemente (Vor, zurück) im Karussell angezeigt werden?'
+  -
+    identifier: showControlsBottom
+    type: Checkbox
+    properties:
+      default: ''
+      required: false
+      items:
+        'yes': 'Sollen Steuerungselemente (Vor, zurück, Index) unter dem Karussell angezeigt werden?'
+  -
+    identifier: showCaption
+    type: Checkbox
+    properties:
+      default: ''
+      required: false
+      items:
+        'yes': 'Soll eine Bildbeschreibung / Unterschrift (je Bild) unter den Bildern angezeigt werden?'
+  -
+      identifier: images
+      type: Image
+      properties:
+          minItems: '1'
+          maxItems: '6'

@@ -7,6 +7,11 @@
  *
  * @author: Darius Mozgiel | mozgiel.de
  */
+:root {
+  --moz-image-card-bg: var(--primary--transparent);
+  --moz-image-card-headline-color: var(--secondary);
+  --moz-image-card-color: white;
+}
 
 /**
  * used as workaround to get breakpoints for contentBlock
