@@ -17,8 +17,14 @@
 
             <div class="moz-image-card__content">
                 <div class="moz-image-card__inner">
-                    <h3>{title}</h3>
-                    <p>{desc}</p>
+
+                    <f:if condition="{title}">
+                        <h3>{title}</h3>
+                    </f:if>
+
+                    <f:if condition="{desc}">
+                        <p>{desc}</p>
+                    </f:if>
                 </div>
             </div>
 

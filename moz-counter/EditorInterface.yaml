@@ -1,0 +1,48 @@
+group: common
+fields:
+    -
+        identifier: value
+        type: Text
+        properties:
+            max: ''
+            size: '200'
+            default: ''
+            placeholder: ''
+            required: false
+            trim: true
+            autocomplete: false
+    -
+        identifier: duration
+        type: Text
+        properties:
+            max: ''
+            size: '100'
+            default: ''
+            placeholder: ''
+            required: false
+            trim: true
+            autocomplete: false
+    -
+        identifier: unit
+        type: Text
+        properties:
+            max: '20'
+            size: '100'
+            default: ''
+            placeholder: ''
+            required: false
+            trim: true
+            autocomplete: false
+    - identifier: style
+      type: Select
+      properties:
+        default: 'after'
+        items:
+          'before': 'Einheit voranstellen'
+          'after': 'Einheit anhängen'
+          'text-before': 'Als Text voranstellen'
+          'text-after': 'Als Text anhängen'
+        prependLabel: 'Ausrichtung wählen'
+        required: true
+        properties:
+          required: true

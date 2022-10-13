@@ -1,0 +1,61 @@
+/**
+ * Counter with upcounting animation when elements comes into viewport
+ *
+ * Note: please use global css vars wherever it makes sense
+ *
+ * @author: Darius Mozgiel | mozgiel.de
+ */
+/**
+ * used as workaround to get breakpoints for contentBlock
+ * Better: Find a more solid and non-redundant solution
+ */
+/* Breakpoints
+-------------------------------------------------- */
+:root {
+  --moz-counter-gap: 10px;
+}
+
+.moz-counter__wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .moz-counter__wrapper {
+    justify-content: end;
+  }
+}
+
+.moz-counter {
+  font-family: var(--site-font-family--bold);
+  font-size: var(--moz-counter--fs--mobile);
+  color: var(--moz-counter--color);
+  display: inline-flex;
+  align-items: end;
+  line-height: 1;
+}
+@media (min-width: 992px) {
+  .moz-counter {
+    font-size: var(--moz-counter--fs);
+  }
+}
+.moz-counter.moz-counter--style-before {
+  flex-direction: row-reverse;
+}
+.moz-counter.moz-counter--style-text-before {
+  flex-direction: row-reverse;
+}
+.moz-counter.moz-counter--style-text-before .moz-counter__unit {
+  font-size: 60%;
+  margin-right: var(--moz-counter-gap);
+  position: relative;
+  top: -5px;
+}
+.moz-counter.moz-counter--style-text-after .moz-counter__unit {
+  font-size: 60%;
+  margin-left: var(--moz-counter-gap);
+  position: relative;
+  top: -5px;
+}
+
+/*# sourceMappingURL=Frontend.css.map */
