@@ -5,7 +5,7 @@ fields:
         type: Text
         properties:
             max: ''
-            size: '200'
+            size: '300'
             default: ''
             placeholder: ''
             required: false

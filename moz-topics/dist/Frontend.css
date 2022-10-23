@@ -1,0 +1,51 @@
+/**
+ * used as workaround to get breakpoints for contentBlock
+ * Better: Find a more solid and non-redundant solution
+ */
+/* Breakpoints
+-------------------------------------------------- */
+.moz-topics .pagination {
+  gap: var(--moz-topics-pagination-gap);
+  flex-wrap: wrap;
+}
+.moz-topics .pagination .page-link {
+  background: var(--moz-topics-pagination-bg);
+  transition: none !important;
+}
+.moz-topics .pagination .page-link:hover {
+  background: var(--primary);
+  filter: brightness(1.4);
+  color: white;
+}
+.moz-topics .pagination .page-link.disabled {
+  opacity: 0.35 !important;
+}
+.moz-topics .pagination .page-link.active {
+  background: var(--primary);
+  color: white;
+}
+
+.moz-topics__list {
+  margin: 2rem 0;
+}
+.moz-topics__list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.moz-topics__list ul li > a {
+  display: block;
+  padding: 1rem 1rem 1rem 0;
+  font-size: 1.2rem;
+  color: black !important;
+  font-weight: bold;
+  border-bottom: 1px solid var(--gray);
+  transition: var(--site-transition-quick);
+}
+.moz-topics__list ul li > a:hover {
+  background: var(--gray-light);
+  border-bottom: 1px solid var(--gray);
+  padding-left: 1.5rem;
+}
+
+/*# sourceMappingURL=Frontend.css.map */

@@ -1,0 +1,14 @@
+group: common
+fields:
+    -
+        identifier: list
+        type: Textarea
+        properties:
+            max: ''
+            rows: '5'
+            cols: '5'
+            default: ''
+            placeholder: 'Hier nur mit einer <ul> Liste arbeiten'
+            required: false
+            trim: true
+            enableRichtext: true

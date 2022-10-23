@@ -4,7 +4,7 @@ fields:
     type: Text
     properties:
       max: ''
-      size: ''
+      size: '300'
       default: ''
       placeholder: ''
       required: false
@@ -58,7 +58,7 @@ fields:
     type: Text
     properties:
       max: ''
-      size: ''
+      size: '300'
       default: ''
       placeholder: ''
       required: false
