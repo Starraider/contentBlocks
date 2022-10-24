@@ -2,6 +2,8 @@
 
 .moz-topics {
 
+    min-height: 80vh;
+
     .pagination {
         gap: var(--moz-topics-pagination-gap);
         flex-wrap: wrap;

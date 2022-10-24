@@ -4,6 +4,9 @@
  */
 /* Breakpoints
 -------------------------------------------------- */
+.moz-topics {
+  min-height: 80vh;
+}
 .moz-topics .pagination {
   gap: var(--moz-topics-pagination-gap);
   flex-wrap: wrap;
