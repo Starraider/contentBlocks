@@ -16,6 +16,7 @@ $(document).ready(function () {
     this.componentIsReady = false;
     this.itemsPerPage = 10;
     this.currentPage = 1;
+    this.lastPage = 3;
     this.startIndex = 0;
     this.showAll = true;
     this.activeFilter = false;
@@ -71,6 +72,32 @@ $(document).ready(function () {
         this.$infobox.addClass('d-none');
       } else {
         this.$infobox.removeClass('d-none');
+      }
+    }
+
+    this.setPaginationUI = function ( element ) {
+      // define new index
+      let page = $( element ).data('page');
+      if( page === 'prev' ) {
+        this.currentPage--;
+      } else if( page === 'next' ) {
+        this.currentPage++;
+      } else {
+        this.currentPage = $( element).data('page');
+      }
+      // set active class
+      $('.page-link[data-page="'+ this.currentPage +'"]').addClass('active');
+
+      if( this.currentPage === 1 ) {
+        $('#MozTopicsPrevPage').addClass('disabled');
+      } else {
+        $('#MozTopicsPrevPage').removeClass('disabled');
+      }
+
+      if( this.currentPage === this.lastPage ) {
+        $('#MozTopicsNextPage').addClass('disabled');
+      } else {
+        $('#MozTopicsNextPage').removeClass('disabled');
       }
     }
 
@@ -132,18 +159,8 @@ $(document).ready(function () {
       _this.$listItems.removeClass('d-none');
       $('#MozTopicsPageIndex .page-link').removeClass('active');
 
-      // define new index
-      let page = $(this).data('page');
-      if( page === 'prev' ) {
-        _this.currentPage--;
-      } else if( page === 'next' ) {
-        _this.currentPage++;
-      } else {
-        _this.currentPage = $(this).data('page');
-      }
-      // set active class
-      $('.page-link[data-page="'+ _this.currentPage +'"]').addClass('active');
-      // TODO check if prev next buttons should be allowed
+      _this.setPaginationUI( this );
+
       _this.paginate();
     })
   }
