@@ -1,4 +1,6 @@
 /* quote */
+@import '../../../../../Build/styles/abstracts/variables';
+@import '../../../../../Build/styles/abstracts/bem-mixin';
 .quote {
     background-image: url('Images/quotation-marks.svg');
     background-position: 97% 3%;
