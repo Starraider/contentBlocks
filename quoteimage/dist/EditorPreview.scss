@@ -1,0 +1,52 @@
+/* quote */
+@import '../../../../../Build/styles/abstracts/variables';
+@import '../../../../../Build/styles/abstracts/bem-mixin';
+
+@include new(skom-quote, component) {
+    // background-image: url('Images/quotation-marks.svg');
+    // background-position: 97% 3%;
+    // background-repeat: no-repeat;
+    // background-size: 40px 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+    @include has(authorimage) {
+        width: 70px;
+        height: 70px;
+    }
+    @include has(image) {
+        margin: 0 auto;
+        margin-top: 0;
+        border-radius: 100%;
+        overflow: hidden;
+    }
+    @include has(text) {
+        padding-left: 1rem;
+    }
+    @include has(author) {
+        font-family: $headings-font-family;
+        font-weight: normal;
+    }
+    @include has(jobtitle) {
+        font-family: $font-family-sans-serif;
+        font-weight: normal;
+    }
+    @include has(quote) {
+        border: none !important;
+        padding: 0 !important;
+        p {
+            font-family: $headings-font-family;
+            font-size: inherit;
+            color: $primary;
+        }
+    }
+    @include has(icon) {
+        align-self: flex-start;
+        padding-left: .5rem;
+    }
+}
+// svg
+.quoteicon {
+    fill: var(--primary) !important;
+}

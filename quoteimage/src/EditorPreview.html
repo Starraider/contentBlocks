@@ -3,13 +3,30 @@
 <f:asset.css identifier="content-block-quoteimage-be" href="CB:quoteimage/dist/EditorPreview.css" />
 
 <be:link.editRecord uid="{data.uid}" table="tt_content" id="element-tt_content-{data.uid}">
-    <div class="quoteimage">
-
-        <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{quote}</f:format.html>
-        <p>{author}</p>
-        <p>{bgcolor}</p>
-
-    </div>
+    <figure
+        class="c-skom-quote {f:if(condition: '{data.background_color_class}', then: 'text-bg-{data.background_color_class}')}">
+        <f:if condition="{authorimage}">
+            <div class="c-skom-quote__authorimage">
+                <f:for each="{authorimage}" as="img">
+                    <f:image class="rounded-circle" image="{img}" width="70c" height="70c-33" />
+                </f:for>
+            </div>
+        </f:if>
+        <div class="c-skom-quote__text">
+            <blockquote class="c-skom-quote__quote">
+                <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{quote}</f:format.html>
+            </blockquote>
+            <figcaption class="c-skom-quote__author">
+                <div class="c-skom-quote__name">{author}</div>
+                <div class="c-skom-quote__jobtitle">
+                    <small>{role}</small>
+                </div>
+            </figcaption>
+        </div>
+        <div class="c-skom-quote__icon">
+            <img src="/{cb.distPath}Images/quotation-marks.svg" width="40" height="40" />
+        </div>
+    </figure>
 </be:link.editRecord>
 
 </html>
