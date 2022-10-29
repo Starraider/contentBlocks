@@ -2,9 +2,7 @@
     xmlns:schema="http://typo3.org/ns/Brotkrueml/Schema/ViewHelpers" data-namespace-typo3-fluid="true">
 
 <f:layout name="Default" />
-
 <f:section name="Main">
-
     <f:asset.css identifier="content-block-quoteimage" href="CB:quoteimage/dist/Frontend.css" />
     <f:asset.script identifier="content-block-quoteimage" src="CB:quoteimage/dist/Frontend.js" />
 
@@ -16,30 +14,30 @@
         </schema:type.person>
     </schema:type.creativeWork>
 
-
-
-    <figure class="quote container text-bg-{bgcolor}">
-        <div class="row">
-            <div class="quote__authorimage col-3 text-center">
+    <figure
+        class="c-skom-quote {f:if(condition: '{data.background_color_class}', then: 'text-bg-{data.background_color_class}')}">
+        <f:if condition="{authorimage}">
+            <div class="c-skom-quote__authorimage">
                 <f:for each="{authorimage}" as="img">
-                    <f:image class="quote__image" image="{img}" width="150" />
+                    <f:image class="rounded-circle" image="{img}" width="150c" height="150c-33" />
                 </f:for>
             </div>
-            <div class="col-9">
-                <blockquote class="quote__text">
-                    <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{quote}</f:format.html>
-                </blockquote>
-                <figcaption class="quote__author">
-                    <div class="quote__name">{author}</div>
-                    <div class="quote__jobtitle">
-                        <small>{role}</small>
-                    </div>
-                </figcaption>
-            </div>
+        </f:if>
+        <div class="c-skom-quote__text">
+            <blockquote class="c-skom-quote__quote">
+                <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{quote}</f:format.html>
+            </blockquote>
+            <figcaption class="c-skom-quote__author">
+                <div class="c-skom-quote__name">{author}</div>
+                <div class="c-skom-quote__jobtitle">
+                    <small>{role}</small>
+                </div>
+            </figcaption>
+        </div>
+        <div class="c-skom-quote__icon">
+            <img src="/{cb.distPath}Images/quotation-marks.svg" width="40" height="40" />
+        </div>
     </figure>
-
-
-
 
 </f:section>
 

@@ -36,13 +36,3 @@ fields:
       properties:
           minItems: '0'
           maxItems: '1'
-    - identifier: bgcolor
-      type: Select
-      properties:
-          prependLabel: ''
-          items:
-              primary: primary
-              secondary: secondary
-              tertiary: tertiary
-              quaternary: quaternary
-              dark: dark
