@@ -1,16 +1,13 @@
+/* quote */
+/*---------------------------------------------
+// Creates an Element
+//---------------------------------------------*/
 .c-skom-quote {
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
   align-items: center;
   padding: 1rem;
 }
-
 .c-skom-quote__authorimage {
   width: 70px;
   height: 70px;
@@ -41,7 +38,6 @@
   border: none !important;
   padding: 0 !important;
 }
-
 .c-skom-quote__quote p {
   font-family: PTSansBold, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: inherit;
@@ -49,8 +45,6 @@
 }
 
 .c-skom-quote__icon {
-  -webkit-align-self: flex-start;
-  -ms-flex-item-align: start;
   align-self: flex-start;
   padding-left: 0.5rem;
 }
