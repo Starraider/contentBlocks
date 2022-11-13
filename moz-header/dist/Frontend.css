@@ -30,6 +30,9 @@
   color: var(--moz-header-skyline-color);
   font-size: var(--moz-header-skyline-size);
 }
+.moz-header__title {
+  margin-bottom: 2rem;
+}
 .moz-header__title p {
   margin-bottom: 0;
 }
