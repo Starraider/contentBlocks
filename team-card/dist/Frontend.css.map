@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["Frontend.scss","_bem-mixin.scss"],"names":[],"mappings":"AAGA;AACA;ACiBQ;EDfJ;EACA;EACA;EACA;;AACA;EACI;EACA;;ACgEA;ED7DA;EACA;EACA;;;AC2DA;EDxDA;;;ACwDA;EDrDA;EACA;;AACA;EACI","file":"Frontend.css"}
+{"version":3,"sourceRoot":"","sources":["Frontend.css"],"names":[],"mappings":"AAAA;AACA;AACA;EACE;EACA;EACA;EACA;;;AAEF;EACE;EACA;;;AAEF;EACE;EACA;EACA;;;AAGF;EACE;;;AAGF;EACE;EACA;;;AAEF;EACE;;;AAGF","file":"Frontend.css"}
