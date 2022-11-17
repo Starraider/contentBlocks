@@ -1,3 +1,6 @@
+.moz-section-title {
+  padding-bottom: 0;
+}
 .moz-section-title .frame-inner {
   display: flex;
   justify-content: start;

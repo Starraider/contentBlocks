@@ -7,12 +7,6 @@
  *
  * @author: Darius Mozgiel | mozgiel.de
  */
-:root {
-  --moz-image-card-bg: var(--primary--transparent);
-  --moz-image-card-headline-color: var(--secondary);
-  --moz-image-card-color: white;
-}
-
 /**
  * used as workaround to get breakpoints for contentBlock
  * Better: Find a more solid and non-redundant solution
@@ -27,7 +21,7 @@
 .moz-image-card__img {
   min-height: 250px;
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
   object-fit: cover;
 }
@@ -82,7 +76,7 @@
   }
 }
 .moz-image-card.card--is-small .moz-image-card__img {
-  min-height: 220px;
+  height: 220px;
 }
 .moz-image-card.card--is-small .moz-image-card__content {
   height: auto;
