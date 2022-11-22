@@ -1,1 +1,48 @@
-.c-skom-personteaser{display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-align-items:center;-ms-flex-align:center;align-items:center}.c-skom-personteaser__picture{padding:1rem}.c-skom-personteaser__text{display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-align-items:flex-start;-ms-flex-align:start;align-items:flex-start}.c-skom-personteaser__name{font-family:PTSansBold,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";font-size:1.125rem;line-height:1.5rem;margin-bottom:0}.c-skom-personteaser__job{color:#6c6c6c;line-height:1rem}
+.c-skom-personteaser {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c-skom-personteaser__picture {
+  padding: 1rem;
+}
+
+.c-skom-personteaser__text {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.c-skom-personteaser__name {
+  font-family: PTSansBold, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  margin-bottom: 0;
+}
+
+.c-skom-personteaser__job {
+  color: #6c6c6c;
+  line-height: 1rem;
+}
+
+/*# sourceMappingURL=Frontend.css.map */
+/*# sourceMappingURL=Frontend.css.map */
+/*# sourceMappingURL=Frontend.css.map */
+/*# sourceMappingURL=Frontend.css.map */
+/*# sourceMappingURL=Frontend.css.map */
+/*# sourceMappingURL=Frontend.css.map */
+
+/*# sourceMappingURL=Frontend.css.map */

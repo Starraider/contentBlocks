@@ -1,1 +1,39 @@
-.c-skom-teamcard{border-style:solid;border-color:var(--bs-border-color-translucent);border-width:1px;transition:.5s}.c-skom-teamcard:hover{transform:scale(1.1);transition:.5s}.c-skom-teamcard__photo{margin:0 auto;margin-top:-70px;overflow:hidden}.c-skom-teamcard__phonetext{margin-left:.5rem}.c-skom-teamcard__socialmedia{display:flex;justify-content:center}.c-skom-teamcard__socialmedia div{margin:.5rem}
+.c-skom-teamcard {
+  border-style: solid;
+  border-color: var(--bs-border-color-translucent);
+  border-width: 1px;
+  transition: 0.5s;
+}
+
+.c-skom-teamcard:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.c-skom-teamcard__photo {
+  margin: 0 auto;
+  margin-top: -70px;
+  overflow: hidden;
+}
+
+.c-skom-teamcard__phonetext {
+  margin-left: 0.5rem;
+}
+
+.c-skom-teamcard__socialmedia {
+  display: flex;
+  justify-content: center;
+}
+
+.c-skom-teamcard__socialmedia div {
+  margin: 0.5rem;
+}
+
+/*# sourceMappingURL=Frontend.css.map */
+/*# sourceMappingURL=Frontend.css.map */
+/*# sourceMappingURL=Frontend.css.map */
+/*# sourceMappingURL=Frontend.css.map */
+/*# sourceMappingURL=Frontend.css.map */
+/*# sourceMappingURL=Frontend.css.map */
+
+/*# sourceMappingURL=Frontend.css.map */
