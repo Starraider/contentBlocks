@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 .moz-section-title {
   padding-bottom: 0;
 }
@@ -33,3 +34,6 @@
 }
 
 /*# sourceMappingURL=Frontend.css.map */
+=======
+.moz-section-title .frame-inner{display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-justify-content:start;-ms-flex-pack:start;justify-content:start}.moz-section-title.orientation--center .frame-inner{-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center}.moz-section-title__inner{position:relative}.moz-section-title__headline{position:relative;display:block}.moz-section-title__headline:after{content:"";display:block;width:100vw;height:4px;background:var(--moz-section-title--underline-color);position:absolute;right:0;bottom:-10px}.moz-section-title__more{position:relative;top:10px;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-justify-content:end;-ms-flex-pack:end;justify-content:end}
+>>>>>>> Stashed changes
