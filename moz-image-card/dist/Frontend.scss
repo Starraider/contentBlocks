@@ -8,12 +8,6 @@
  * @author: Darius Mozgiel | mozgiel.de
  */
 
-:root {
-    --moz-image-card-bg: var(--primary--transparent);
-    --moz-image-card-headline-color: var(--secondary);
-    --moz-image-card-color: white;
-}
-
 @import '../../../../../packages/dgvtbase/Resources/Public/Scss/breakpoints';
 
 .moz-image-card {
@@ -24,7 +18,7 @@
     &__img {
         min-height: 250px; // TODO variable
         display: block;
-        max-width: 100%;
+        width: 100%;
         height: auto;
         object-fit: cover;
     }
@@ -89,7 +83,7 @@
     &.card--is-small {
 
         .moz-image-card__img {
-            min-height: 220px; // TODO variable
+            height: 220px; // TODO variable
         }
 
         .moz-image-card__content {

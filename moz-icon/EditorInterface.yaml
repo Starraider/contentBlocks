@@ -22,3 +22,6 @@ fields:
         'fab fa-youtube': ' YouTube'
         'fab fa-linkedin': 'Linkedin'
         'fab fa-xing': 'Xing'
+        'fa-regular fa-calendar': 'Kalender'
+        'fa fa-user': 'Benutzer'
+        'fa-regular fa-file-lines': 'Dokument'

@@ -1,3 +1,6 @@
+.moz-section-title {
+  padding-bottom: 0;
+}
 .moz-section-title .frame-inner {
   display: flex;
   justify-content: start;
@@ -17,7 +20,7 @@
   display: block;
   width: 100vh;
   height: 4px;
-  background: black;
+  background: var(--moz-section-title-underline-color);
   position: absolute;
   right: 0;
   bottom: -10px;

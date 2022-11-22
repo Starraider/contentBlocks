@@ -1,12 +1,10 @@
+/* quote */
+/*---------------------------------------------
+// Creates an Element
+//---------------------------------------------*/
 .c-skom-quote {
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
   align-items: center;
   padding: 1rem;
 }
@@ -49,8 +47,6 @@
 }
 
 .c-skom-quote__icon {
-  -webkit-align-self: flex-start;
-  -ms-flex-item-align: start;
   align-self: flex-start;
   padding-left: 0.5rem;
 }
@@ -59,11 +55,6 @@
   fill: var(--primary) !important;
 }
 
-/*# sourceMappingURL=EditorPreview.css.map */
-/*# sourceMappingURL=EditorPreview.css.map */
-/*# sourceMappingURL=EditorPreview.css.map */
-/*# sourceMappingURL=EditorPreview.css.map */
-/*# sourceMappingURL=EditorPreview.css.map */
 /*# sourceMappingURL=EditorPreview.css.map */
 
 /*# sourceMappingURL=EditorPreview.css.map */

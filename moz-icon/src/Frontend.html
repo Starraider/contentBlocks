@@ -9,12 +9,12 @@
         <f:asset.script identifier="content-block-moz-icon" src="CB:moz-icon/dist/Frontend.js"/>
 
         <div class="moz-icon">
-            <f:if condition="{iconString}">
+            <f:if condition="{icon}">
                 <f:then>
-                    <i class="{iconString}"></i>
+                    <i class="{icon}"></i>
                 </f:then>
                 <f:else>
-                    <i class="{icon}"></i>
+                    <i class="{iconString}"></i>
                 </f:else>
             </f:if>
         </div>
