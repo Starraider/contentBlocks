@@ -61,6 +61,7 @@ fields:
         default: 'halfwidth'
         items:
           'halfwidth': '50/50 Aufteilung'
+          'halfwidth-rounded': '50/50 Aufteilung (abgerundet)'
           'fullwidth': 'volle Breite'
         prependLabel: 'Layout wählen'
         required: true

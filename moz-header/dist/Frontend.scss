@@ -89,6 +89,13 @@
             object-fit: cover;
         }
 
+        // behaves like halfwidth, but has a rounded border on the bottom left
+        &.moz-header--halfwidth-rounded {
+            @extend .moz-header--halfwidth;
+            border-bottom-left-radius: var(--moz-header-border-radius);
+            overflow: hidden;
+        }
+
         // full width image background variation
         &.moz-header--fullwidth {
             background: none !important;

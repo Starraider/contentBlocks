@@ -66,7 +66,7 @@
 .moz-header.moz-header--has-image {
   padding: 0;
 }
-.moz-header.moz-header--has-image.moz-header--halfwidth.moz-header__title {
+.moz-header.moz-header--has-image.moz-header--halfwidth.moz-header__title, .moz-header.moz-header--has-image.moz-header__title.moz-header--halfwidth-rounded {
   max-width: var(--moz-header-content-maxwidth);
 }
 .moz-header.moz-header--has-image .moz-header__img {
@@ -74,6 +74,10 @@
   height: 100%;
   display: block;
   object-fit: cover;
+}
+.moz-header.moz-header--has-image.moz-header--halfwidth-rounded {
+  border-bottom-left-radius: var(--moz-header-border-radius);
+  overflow: hidden;
 }
 .moz-header.moz-header--has-image.moz-header--fullwidth {
   background: none !important;
