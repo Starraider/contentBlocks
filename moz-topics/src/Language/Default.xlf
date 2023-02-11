@@ -17,10 +17,9 @@
                 <source>Themenliste</source>
             </trans-unit>
 
-            <trans-unit id="typo3-contentblocks.moz-topics.list.description" xml:space="preserve">
-                <source></source>
+            <trans-unit id="typo3-contentblocks.moz-topics.not_found" xml:space="preserve">
+                <source>Keine passenden Einträge gefunden</source>
             </trans-unit>
-
         </body>
     </file>
 </xliff>
