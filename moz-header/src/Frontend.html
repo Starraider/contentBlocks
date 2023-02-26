@@ -20,10 +20,10 @@
                     <span class="moz-header__skyline">{skyline}</span>
                     <f:if condition="isMainTitle">
                         <f:then>
-                            <h1 class="moz-header__title"><f:format.raw>{title}</f:format.raw></h1>
+                            <h1 class="moz-header__title"><f:format.stripTags allowedTags="<br><a>">{title}</f:format.stripTags></h1>
                         </f:then>
                         <f:else>
-                            <h2 class="moz-header__title"><f:format.raw>{title}</f:format.raw></h2>
+                            <h2 class="moz-header__title"><f:format.stripTags allowedTags="<br><a>">{title}</f:format.stripTags></h2>
                         </f:else>
                     </f:if>
                     <f:if condition="{buttonLink} && {buttonText}">
