@@ -35,7 +35,7 @@
         p {
             margin-bottom: 0;
         }
-        margin-bottom: 2rem;
+        //margin-bottom: 2rem;
     }
 
     &__content {
@@ -134,6 +134,7 @@
                 .moz-header__skyline,
                 .moz-header__title {
                     color: var(--moz-header--fullwidth-color);
+                    margin-bottom: 0 !important;
                 }
 
                 .moz-header__share {
@@ -143,8 +144,8 @@
                     .moz-icon__wrapper {
                         font-size: 1.75rem;
                         padding: 1.3rem;
-                        background: var(--secondary);
-                        color: var(--primary);
+                        background: var(--link__icon--bg);
+                        color: var(--link__icon--color);
                         text-decoration: none !important;
                     }
                 }
