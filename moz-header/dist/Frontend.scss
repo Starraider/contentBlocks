@@ -29,13 +29,21 @@
         font-weight: bold;
         color: var(--moz-header-skyline-color);
         font-size: var(--moz-header-skyline-size);
+
+        // Mobile
+        @media( max-width: $md ) {
+            font-size: var(--moz-header-skyline-size--mobile);
+        }
     }
 
     &__title {
         p {
             margin-bottom: 0;
         }
-        //margin-bottom: 2rem;
+        // Mobile
+        @media( max-width: $md ) {
+            font-size: var(--moz-header-headline-size--mobile);
+        }
     }
 
     &__content {
@@ -66,7 +74,7 @@
         }
 
         @media(min-width: $md) {
-            min-width: 200px;
+            min-width: 300px;
         }
     }
 
@@ -127,10 +135,6 @@
                 background: var(--primary--transparent);
                 color: var(--moz-header--fullwidth-color);
 
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-
                 .moz-header__skyline,
                 .moz-header__title {
                     color: var(--moz-header--fullwidth-color);
@@ -142,11 +146,37 @@
                     justify-content: end;
 
                     .moz-icon__wrapper {
-                        font-size: 1.75rem;
-                        padding: 1.3rem;
+                        font-size: 1rem;
+                        padding: 1rem;
                         background: var(--link__icon--bg);
                         color: var(--link__icon--color);
                         text-decoration: none !important;
+
+                        @media( min-width: $md ) {
+                            font-size: 1.75rem;
+                            padding: 1.3rem;
+                        }
+                    }
+
+                    @media( min-width: $md ) {
+                        // Request to align the icons with the headline
+                        margin-top: 0;
+                    }
+                }
+
+                @media( min-width: $md ) {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: start;
+                }
+
+                &.has-skyline {
+
+                    .moz-header__share {
+                        @media( min-width: $md ) {
+                            // align-items start + 30px margin because of the skyline
+                            margin-top: 35px;
+                        }
                     }
                 }
             }

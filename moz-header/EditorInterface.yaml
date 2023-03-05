@@ -22,7 +22,7 @@ fields:
             placeholder: ''
             required: false
             trim: true
-            enableRichtext: false
+            enableRichtext: true
     -
         identifier: buttonLink
         type: Url

@@ -30,8 +30,18 @@
   color: var(--moz-header-skyline-color);
   font-size: var(--moz-header-skyline-size);
 }
+@media (max-width: 992px) {
+  .moz-header__skyline {
+    font-size: var(--moz-header-skyline-size--mobile);
+  }
+}
 .moz-header__title p {
   margin-bottom: 0;
+}
+@media (max-width: 992px) {
+  .moz-header__title {
+    font-size: var(--moz-header-headline-size--mobile);
+  }
 }
 .moz-header__content {
   padding: 2rem 1rem;
@@ -57,7 +67,7 @@
 }
 @media (min-width: 992px) {
   .moz-header__share {
-    min-width: 200px;
+    min-width: 300px;
   }
 }
 .moz-header.moz-header--has-image {
@@ -105,9 +115,6 @@
   padding: 2rem;
   background: var(--primary--transparent);
   color: var(--moz-header--fullwidth-color);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 .moz-header.moz-header--has-image.moz-header--fullwidth .moz-header__content .moz-header__skyline,
 .moz-header.moz-header--has-image.moz-header--fullwidth .moz-header__content .moz-header__title {
@@ -119,11 +126,34 @@
   justify-content: end;
 }
 .moz-header.moz-header--has-image.moz-header--fullwidth .moz-header__content .moz-header__share .moz-icon__wrapper {
-  font-size: 1.75rem;
-  padding: 1.3rem;
+  font-size: 1rem;
+  padding: 1rem;
   background: var(--link__icon--bg);
   color: var(--link__icon--color);
   text-decoration: none !important;
+}
+@media (min-width: 992px) {
+  .moz-header.moz-header--has-image.moz-header--fullwidth .moz-header__content .moz-header__share .moz-icon__wrapper {
+    font-size: 1.75rem;
+    padding: 1.3rem;
+  }
+}
+@media (min-width: 992px) {
+  .moz-header.moz-header--has-image.moz-header--fullwidth .moz-header__content .moz-header__share {
+    margin-top: 0;
+  }
+}
+@media (min-width: 992px) {
+  .moz-header.moz-header--has-image.moz-header--fullwidth .moz-header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+  }
+}
+@media (min-width: 992px) {
+  .moz-header.moz-header--has-image.moz-header--fullwidth .moz-header__content.has-skyline .moz-header__share {
+    margin-top: 35px;
+  }
 }
 .moz-header.moz-header--without-image {
   border-bottom-left-radius: var(--moz-header-border-radius);
