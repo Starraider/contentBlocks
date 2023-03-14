@@ -37,23 +37,22 @@ fields:
           trim: false
           enableRichtext: false
     - identifier: email
-      type: Url
+      type: Email
       properties:
-          max: '250'
-          size: '80'
+          autocomplete: true
           default: ''
           placeholder: ''
           required: false
-          autocomplete: false
+          size: 20
+          trim: true
     - identifier: phone
-      type: Text
+      type: Tel
       properties:
-          max: '250'
-          size: '80'
-          default: ''
-          placeholder: '+49 ...'
+          autocomplete: true
+          default: 0
           required: false
-          autocomplete: false
+          size: 20
+          trim: true
     - identifier: facebook
       type: Url
       properties:
