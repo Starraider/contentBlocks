@@ -1,6 +1,6 @@
 {
 	"name": "typo3-contentblocks/abz_list",
-	"description": "Content block created by Content Block Builder.",
+	"description": "Liste der Ausbildungszentren",
 	"type": "typo3-contentblock",
 	"license": "GPL-2.0-or-later",
 	"version": "1.0.0",

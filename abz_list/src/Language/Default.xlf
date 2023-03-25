@@ -10,70 +10,70 @@
                 <source>ABZ-Liste</source>
             </trans-unit>
             <trans-unit id="typo3-contentblocks.abz_list.description" xml:space="preserve">
-                <source>ABZ-Liste - abz_list created by Content Block Builder.</source>
+                <source>Roll-Down-Liste der Ausbildungszentren</source>
             </trans-unit>
 
-            <trans-unit id="typo3-contentblocks.abz_list.title.label" xml:space="preserve">
+            <trans-unit id="typo3-contentblocks.abz_list.abz.title.label" xml:space="preserve">
                 <source>Name des ABZ</source>
             </trans-unit>
 
-            <trans-unit id="typo3-contentblocks.abz_list.title.description" xml:space="preserve">
+            <trans-unit id="typo3-contentblocks.abz_list.abz.title.description" xml:space="preserve">
                 <source></source>
             </trans-unit>
 
-            <trans-unit id="typo3-contentblocks.abz_list.street1.label" xml:space="preserve">
+            <trans-unit id="typo3-contentblocks.abz_list.abz.street1.label" xml:space="preserve">
                 <source>Straße / Hausnummer</source>
             </trans-unit>
 
-            <trans-unit id="typo3-contentblocks.abz_list.street1.description" xml:space="preserve">
+            <trans-unit id="typo3-contentblocks.abz_list.abz.street1.description" xml:space="preserve">
                 <source></source>
             </trans-unit>
 
-            <trans-unit id="typo3-contentblocks.abz_list.street2.label" xml:space="preserve">
-                <source>Adresszusatz</source>
+            <trans-unit id="typo3-contentblocks.abz_list.abz.street2.label" xml:space="preserve">
+                <source>Adress-Zusatz</source>
             </trans-unit>
 
-            <trans-unit id="typo3-contentblocks.abz_list.street2.description" xml:space="preserve">
+            <trans-unit id="typo3-contentblocks.abz_list.abz.street2.description" xml:space="preserve">
                 <source></source>
             </trans-unit>
 
-            <trans-unit id="typo3-contentblocks.abz_list.zip.label" xml:space="preserve">
+            <trans-unit id="typo3-contentblocks.abz_list.abz.zip.label" xml:space="preserve">
                 <source>PLZ</source>
             </trans-unit>
 
-            <trans-unit id="typo3-contentblocks.abz_list.zip.description" xml:space="preserve">
+            <trans-unit id="typo3-contentblocks.abz_list.abz.zip.description" xml:space="preserve">
                 <source></source>
             </trans-unit>
 
-            <trans-unit id="typo3-contentblocks.abz_list.city.label" xml:space="preserve">
+            <trans-unit id="typo3-contentblocks.abz_list.abz.city.label" xml:space="preserve">
                 <source>Ort</source>
             </trans-unit>
 
-            <trans-unit id="typo3-contentblocks.abz_list.city.description" xml:space="preserve">
+            <trans-unit id="typo3-contentblocks.abz_list.abz.city.description" xml:space="preserve">
                 <source></source>
             </trans-unit>
 
-            <trans-unit id="typo3-contentblocks.abz_list.mail.label" xml:space="preserve">
+            <trans-unit id="typo3-contentblocks.abz_list.abz.mail.label" xml:space="preserve">
                 <source>E-Mail-Adresse</source>
             </trans-unit>
 
-            <trans-unit id="typo3-contentblocks.abz_list.mail.description" xml:space="preserve">
+            <trans-unit id="typo3-contentblocks.abz_list.abz.mail.description" xml:space="preserve">
                 <source></source>
             </trans-unit>
 
-            <trans-unit id="typo3-contentblocks.abz_list.phone.label" xml:space="preserve">
+            <trans-unit id="typo3-contentblocks.abz_list.abz.phone.label" xml:space="preserve">
                 <source>Telefonnummer</source>
             </trans-unit>
 
-            <trans-unit id="typo3-contentblocks.abz_list.phone.description" xml:space="preserve">
+            <trans-unit id="typo3-contentblocks.abz_list.abz.phone.description" xml:space="preserve">
                 <source></source>
             </trans-unit>
 
-            <trans-unit id="typo3-contentblocks.abz_list.linktopage.label" xml:space="preserve">
+            <trans-unit id="typo3-contentblocks.abz_list.abz.linktopage.label" xml:space="preserve">
                 <source>Link zur Seite</source>
             </trans-unit>
 
-            <trans-unit id="typo3-contentblocks.abz_list.linktopage.description" xml:space="preserve">
+            <trans-unit id="typo3-contentblocks.abz_list.abz.linktopage.description" xml:space="preserve">
                 <source></source>
             </trans-unit>
 
