@@ -1,0 +1,13 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:be="http://typo3.org/ns/TYPO3/CMS/Backend/ViewHelpers" data-namespace-typo3-fluid="true">
+    <f:asset.css identifier="content-block-abz_list-be" href="CB:abz_list/dist/EditorPreview.css"/>
+
+    <be:link.editRecord uid="{data.uid}" table="tt_content" id="element-tt_content-{data.uid}">
+        <ul class="list-group">
+            <f:for each="{abz}" as="zentrum">
+                <li class="list-group-item">
+                    <strong>{zentrum.title}</strong>
+                </li>
+            </f:for>
+        </ul>
+    </be:link.editRecord>
+</html>

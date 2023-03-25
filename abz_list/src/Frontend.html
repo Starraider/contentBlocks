@@ -1,0 +1,42 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+    <f:layout name="Default" />
+
+    <f:section name="Main">
+
+        <f:asset.css identifier="content-block-abz_list-be" href="CB:abz_list/dist/EditorPreview.css"/>
+        <f:asset.css identifier="content-block-abz_list" href="CB:abz_list/dist/Frontend.css"/>
+        <f:asset.script identifier="content-block-abz_list" src="CB:abz_list/dist/Frontend.js"/>
+
+        <div class="abz_list list-group">
+            <div class=" c-abz-list__header list-group-item">
+                DGVT-Ausbildungszentren für die Psychotherapieausbildung
+            </div>
+            <div class="c-abz-list__list overflow-y-scroll">
+                <f:for each="{abz}" as="zentrum">
+                    <f:link.typolink class=" c-abz-list__abz list-group-item list-group-item-action" parameter="{zentrum.linktopage}">
+                        <div class="c-abz-list__title">
+                            {zentrum.title}
+                        </div>
+                        <div class="c-abz-list__street1">{zentrum.street1}</div>
+                        <f:if condition="{zentrum.street2}">
+                            <div class="c-abz-list__street2">{zentrum.street2}</div>
+                        </f:if>
+                        <div class="c-abz-list__city">{zentrum.zip} {zentrum.city}</div>
+                        <div class="c-abz-list__email">
+                            E-Mail: {zentrum.mail}
+                        </div>
+                        <f:if condition="{zentrum.phone}">
+                            <div class="c-abz-list__phone">Tel.: {zentrum.phone}</div>
+                        </f:if>
+                    </f:link.typolink>
+                </f:for>
+            </div>
+            <div class="c-abz-list__footer list-group-item text-center align-bottom">
+                <i class="c-abz-list__icon fa fa-chevron-down position-absolute bottom-0 start-50 translate-middle-x shadow-sm"></i>
+            </div>
+
+        </div>
+
+    </f:section>
+</html>
