@@ -15,7 +15,8 @@
         margin-bottom: -100px;
     }
     @include has(abz){
-
+        border-top: none;
+        border-bottom: none;
     }
     @include has(title){
         font-size: $font-size-base;
