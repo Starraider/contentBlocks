@@ -19,12 +19,16 @@
                 <div class="moz-header__inner">
                     <span class="moz-header__skyline">{skyline}</span>
                     <f:if condition="isMainTitle">
+
                         <f:then>
                             <h1 class="moz-header__title"><f:format.stripTags allowedTags="<br><a>">{title}</f:format.stripTags></h1>
                         </f:then>
                         <f:else>
                             <h2 class="moz-header__title"><f:format.stripTags allowedTags="<br><a>">{title}</f:format.stripTags></h2>
                         </f:else>
+                    </f:if>
+                    <f:if condition="teaser">
+                        <f:format.html>{teaser}</f:format.html>
                     </f:if>
                     <f:if condition="{buttonLink} && {buttonText}">
                         <f:link.typolink parameter="{buttonLink}" class="moz-header__btn btn btn-primary">{buttonText}</f:link.typolink>

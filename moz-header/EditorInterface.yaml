@@ -24,6 +24,18 @@ fields:
             trim: true
             enableRichtext: true
     -
+      identifier: teaser
+      type: Textarea
+      properties:
+        max: '300'
+        rows: '4'
+        cols: ''
+        default: ''
+        placeholder: 'Teasertext unter der Überschrift'
+        required: false
+        trim: true
+        enableRichtext: true
+    -
         identifier: buttonLink
         type: Url
         linkPopup:
