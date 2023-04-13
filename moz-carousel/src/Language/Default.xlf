@@ -25,8 +25,16 @@
                 <source>Höhe der einzelnen Slides</source>
             </trans-unit>
 
-            <trans-unit id="typo3-contentblocks.moz-carousel.height.description" xml:space="preserve">
-                <source></source>
+			<trans-unit id="typo3-contentblocks.moz-carousel.autoplay.label" xml:space="preserve">
+                <source>Höhe der einzelnen Slides</source>
+            </trans-unit>
+
+			<trans-unit id="typo3-contentblocks.moz-carousel.autoplayInterval.label" xml:space="preserve">
+                <source>Autoplay Intervall</source>
+            </trans-unit>
+
+            <trans-unit id="typo3-contentblocks.moz-carousel.autoplayInterval.description" xml:space="preserve">
+                <source>Bestimmt die Geschwindigkeit des Karussells in ms (1000 = 1 Sekunden pro Bild). Der Wert 0 deaktiviert das Autoplay.</source>
             </trans-unit>
 
         </body>

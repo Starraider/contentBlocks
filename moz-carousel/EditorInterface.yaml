@@ -12,13 +12,24 @@ fields:
       trim: true
       autocomplete: false
   -
+    identifier: autoplayInterval
+    type: Number
+    properties:
+      max: 10000
+      size: '200'
+      default: 0
+      placeholder: 'Wert in ms eintragen (z.B. 1000 = 1 Sekunde)'
+      required: false
+      trim: true
+      autocomplete: false
+  -
     identifier: showControlsInside
     type: Checkbox
     properties:
       default: ''
       required: false
       items:
-        'yes': 'Sollen Steuerungselemente (Vor, zurück) im Karussell angezeigt werden?'
+        'yes': 'Sollen Pfeile (Vor, zurück) im Karussell angezeigt werden?'
   -
     identifier: showControlsBottom
     type: Checkbox
