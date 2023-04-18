@@ -6,10 +6,6 @@
  *
  * @author: Darius Mozgiel | mozgiel.de
  */
-/**
- * used as workaround to get breakpoints for contentBlock
- * Better: Find a more solid and non-redundant solution
- */
 /* Breakpoints
 -------------------------------------------------- */
 .moz-header {
@@ -134,8 +130,8 @@
 }
 @media (min-width: 992px) {
   .moz-header.moz-header--has-image.moz-header--fullwidth .moz-header__content .moz-header__share .moz-icon__wrapper {
-    font-size: 1.75rem;
-    padding: 1.3rem;
+    font-size: 1.5rem;
+    padding: 1.15rem;
   }
 }
 @media (min-width: 992px) {
