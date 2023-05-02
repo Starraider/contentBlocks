@@ -14,7 +14,7 @@
             <div class="frame-inner">
                 <div class="moz-section-title__inner">
                     <v:tag name="{type}" class="moz-section-title__headline">
-                        {heading}
+                        <f:format.raw>{heading}</f:format.raw>
                     </v:tag>
                     <f:if condition="url">
                         <f:link.typolink parameter="{url}" class="moz-section-title__more">{linkText}</f:link.typolink>
