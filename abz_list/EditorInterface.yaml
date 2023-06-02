@@ -76,7 +76,7 @@ fields:
                 size: '40'
                 default: ''
                 placeholder: ''
-                required: true
+                required: false
                 trim: true
                 autocomplete: true
         -
