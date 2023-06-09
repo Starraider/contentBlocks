@@ -27,8 +27,16 @@
                     <f:for each="{images}" as="item" iteration="interator">
                         <div class="carousel-item {f:if(condition: '{interator.index} == 0', then: 'active')}">
                             <figure class="figure moz-carousel__figure" aria-labelledby="figcaption-{item.referenceProperties.uid}" style="height: {height}px">
-
-                                <f:image image="{item}" class="moz-carousel__img"/>
+                                <f:if condition="{item.referenceProperties.link}">
+                                    <f:then>
+                                        <f:link.typolink parameter="{item.referenceProperties.link}">
+                                            <f:image image="{item}" class="moz-carousel__img"/>
+                                        </f:link.typolink>
+                                    </f:then>
+                                    <f:else>
+                                        <f:image image="{item}" class="moz-carousel__img"/>
+                                    </f:else>
+                                </f:if>
                             </figure>
                             <f:if condition="{showCaption}">
                                 <figcaption id="figcaption-{item.referenceProperties.uid}" class="moz-carousel__caption">{item.referenceProperties.description}</figcaption>
