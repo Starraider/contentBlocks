@@ -23,9 +23,11 @@
                             <div class="c-abz-list__street2">{zentrum.street2}</div>
                         </f:if>
                         <div class="c-abz-list__city">{zentrum.zip} {zentrum.city}</div>
-                        <div class="c-abz-list__email">
-                            E-Mail: {zentrum.mail}
-                        </div>
+                        <f:if condition="{zentrum.mail}">
+                            <div class="c-abz-list__email">
+                                E-Mail: {zentrum.mail}
+                            </div>
+                        </f:if>
                         <f:if condition="{zentrum.phone}">
                             <div class="c-abz-list__phone">Tel.: {zentrum.phone}</div>
                         </f:if>
