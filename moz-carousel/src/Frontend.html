@@ -46,14 +46,16 @@
                 </div>
                 <f:if condition="{showControlsBottom}">
                     <div class="moz-carousel__controls">
-                        <button class="carousel-control-prev" type="button" data-bs-target="#MozCarousel-{data.uid}" data-bs-slide="prev">
-                            <i class="fa fa-arrow-left-long"></i>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#MozCarousel-{data.uid}" data-bs-slide="next">
-                            <i class="fa fa-arrow-right-long"></i>
-                            <span class="visually-hidden">Next</span>
-                        </button>
+                        <f:if condition="{showNavArrowsBottom}">
+                            <button class="carousel-control-prev" type="button" data-bs-target="#MozCarousel-{data.uid}" data-bs-slide="prev">
+                                <i class="fa fa-arrow-left-long"></i>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#MozCarousel-{data.uid}" data-bs-slide="next">
+                                <i class="fa fa-arrow-right-long"></i>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </f:if>
                         <div class="carousel-indicators">
                             <f:for each="{images}" as="item" iteration="interator">
                                 <button type="button" data-bs-target="#MozCarousel-{data.uid}" data-bs-slide-to="{interator.index}" class="{f:if(condition: '{interator.index} == 0', then: 'active')}" aria-current="true" aria-label="Slide {interator.index}"></button>

@@ -39,6 +39,14 @@ fields:
       items:
         'yes': 'Sollen Steuerungselemente (Vor, zurück, Index) unter dem Karussell angezeigt werden?'
   -
+    identifier: showNavArrowsBottom
+    type: Checkbox
+    properties:
+      default: ''
+      required: false
+      items:
+        'yes': 'Sollen bei den unteren Steuerungselementen die Navigationselemente (Vor, zurück) angezeigt werden?'
+  -
     identifier: showCaption
     type: Checkbox
     properties:
