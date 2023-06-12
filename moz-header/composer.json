@@ -1,0 +1,18 @@
+{
+    "name": "typo3-contentblocks/moz-header",
+    "description": "Teaser mit Bild/Titel/Beschreibung - mozgiel.de.",
+    "type": "typo3-contentblock",
+    "license": "GPL-2.0-or-later",
+	"version": "1.0.0",
+	"authors": [
+		{
+			"name": "Darius Mozgiel",
+			"email": "darius@mozgiel.de",
+			"homepage": "https://mozgiel.de",
+			"role": "Developer"
+		}
+	],
+    "require": {
+        "typo3-contentblocks/contentblocks-reg-api": "*"
+    }
+}

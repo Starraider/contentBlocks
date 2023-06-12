@@ -1,0 +1,100 @@
+/**
+ * Text/Image Hover Element.
+ * Behaviour: On hover, show hiden text block with animation
+ * Behaviour mobile: Show everything without the need to hover
+ *
+ * Note: please use global css vars wherever it makes sense
+ *
+ * @author: Darius Mozgiel | mozgiel.de
+ */
+/**
+ * used as workaround to get breakpoints for contentBlock
+ * Better: Find a more solid and non-redundant solution
+ */
+/* Breakpoints
+-------------------------------------------------- */
+.moz-image-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--moz-header-border-radius) 0 var(--moz-header-border-radius) var(--moz-header-border-radius);
+}
+.moz-image-card__img {
+  min-height: 250px;
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.moz-image-card:hover {
+  text-decoration: none !important;
+}
+.moz-image-card__content {
+  text-align: center;
+  position: relative;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--moz-image-card-bg);
+  color: var(--moz-image-card-color);
+  transition: var(--site-transition-quick);
+}
+@media (min-width: 992px) {
+  .moz-image-card__content {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+  }
+}
+.moz-image-card__content h2, .moz-image-card__content h3, .moz-image-card__content h4 {
+  color: var(--moz-image-card-headline-color);
+  margin-bottom: 0;
+}
+.moz-image-card__content p {
+  margin-top: 1rem;
+}
+@media (min-width: 992px) {
+  .moz-image-card__content p {
+    display: none;
+    position: relative;
+    transition: var(--site-transition-quick);
+  }
+}
+@media (min-width: 992px) {
+  .moz-image-card:hover .moz-image-card__content {
+    bottom: 0;
+    height: 100%;
+  }
+  .moz-image-card:hover .moz-image-card__content p {
+    display: block;
+    margin-bottom: 0;
+    font-size: 1rem;
+    line-height: 1;
+  }
+}
+.moz-image-card.card--is-small .moz-image-card__img {
+  height: 220px;
+}
+.moz-image-card.card--is-small .moz-image-card__content {
+  height: auto;
+  padding: 1rem;
+}
+@media (min-width: 992px) {
+  .moz-image-card.card--is-small .moz-image-card__content {
+    padding: 0.5rem 1rem;
+    height: 70px;
+  }
+}
+.moz-image-card.card--is-small .moz-image-card__content h1, .moz-image-card.card--is-small .moz-image-card__content h2, .moz-image-card.card--is-small .moz-image-card__content h3, .moz-image-card.card--is-small .moz-image-card__content h4 {
+  font-size: 1rem;
+}
+@media (min-width: 992px) {
+  .moz-image-card.card--is-small:hover .moz-image-card__content {
+    height: 100%;
+  }
+}
+
+/*# sourceMappingURL=Frontend.css.map */

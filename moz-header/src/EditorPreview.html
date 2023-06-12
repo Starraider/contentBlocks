@@ -1,0 +1,16 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:be="http://typo3.org/ns/TYPO3/CMS/Backend/ViewHelpers" data-namespace-typo3-fluid="true">
+    <f:asset.css identifier="content-block-moz-header-be" href="CB:moz-header/dist/EditorPreview.css"/>
+
+    <be:link.editRecord uid="{data.uid}" table="tt_content" id="element-tt_content-{data.uid}">
+        <div class="moz-header">
+            <p>Preview:</p>
+            <p>{skyline}</p>
+            <f:format.raw><h1>{title}</h1></f:format.raw>
+            <f:format.raw><p>{teaser}</p></f:format.raw>
+            <p>{buttonText} Link zu: {buttonLink}</p>
+            <f:for each="{image}" as="img">
+                <f:image width="200" image="{img}" class="img" />
+            </f:for>
+        </div>
+    </be:link.editRecord>
+</html>

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<xliff version="1.0">
+    <file datatype="plaintext"
+            original="messages"
+            source-language="en"
+            product-name="text">
+        <header/>
+        <body>
+            <trans-unit id="typo3-contentblocks.moz-topics.title" xml:space="preserve">
+                <source>Themenarchiv</source>
+            </trans-unit>
+            <trans-unit id="typo3-contentblocks.moz-topics.description" xml:space="preserve">
+                <source>Themenarchiv - moz-topics created by Content Block Builder.</source>
+            </trans-unit>
+
+            <trans-unit id="typo3-contentblocks.moz-topics.list.label" xml:space="preserve">
+                <source>Themenliste</source>
+            </trans-unit>
+
+            <trans-unit id="typo3-contentblocks.moz-topics.not_found" xml:space="preserve">
+                <source>Keine passenden Einträge gefunden</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

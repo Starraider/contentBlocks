@@ -1,0 +1,66 @@
+group: bausteine
+fields:
+  - identifier: heading
+    type: Text
+    properties:
+      max: ''
+      size: '300'
+      default: ''
+      placeholder: ''
+      required: false
+      trim: true
+      autocomplete: false
+
+  - identifier: alignment
+    type: Select
+    properties:
+      default: 'left'
+      items:
+        'left': 'linksbündig'
+        'center': 'zentriert'
+      prependLabel: 'Ausrichtung wählen'
+      required: true
+      properties:
+        required: true
+
+
+  - identifier: type
+    type: Select
+    properties:
+      default: 'h2'
+      items:
+        'h1': 'H1 Überschrift'
+        'h2': 'H2 Überschrift'
+        'h3': 'H3 Überschrift'
+        'h4': 'H4 Überschrift'
+        'h5': 'H5 Überschrift'
+      prependLabel: 'Überschrift wählen'
+      required: true
+      properties:
+        required: true
+
+  - identifier: url
+    type: Url
+    linkPopup:
+      blindLinkFields: 'target,title'
+      blindLinkOptions: 'folder,spec,telefone,mail'
+      windowOpenParameters: 'height=800,width=600'
+    properties:
+      max: ''
+      size: '200'
+      default: ''
+      placeholder: ''
+      required: false
+      autocomplete: false
+      trim: true
+
+  - identifier: linkText
+    type: Text
+    properties:
+      max: ''
+      size: '300'
+      default: ''
+      placeholder: ''
+      required: false
+      trim: true
+      autocomplete: falses

@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<xliff version="1.0">
+    <file datatype="plaintext"
+            original="messages"
+            source-language="en"
+            product-name="text">
+        <header/>
+        <body>
+            <trans-unit id="typo3-contentblocks.quoteimage.title" xml:space="preserve">
+                <source>Quote with image</source>
+            </trans-unit>
+            <trans-unit id="typo3-contentblocks.quoteimage.description" xml:space="preserve">
+                <source>Quote with image - quoteimage created by Content Block Builder.</source>
+            </trans-unit>
+
+            <trans-unit id="typo3-contentblocks.quoteimage.quote.label" xml:space="preserve">
+                <source>Quote</source>
+            </trans-unit>
+
+            <trans-unit id="typo3-contentblocks.quoteimage.quote.description" xml:space="preserve">
+                <source>Quote</source>
+            </trans-unit>
+
+            <trans-unit id="typo3-contentblocks.quoteimage.author.label" xml:space="preserve">
+                <source>Author</source>
+            </trans-unit>
+
+            <trans-unit id="typo3-contentblocks.quoteimage.author.description" xml:space="preserve">
+                <source>Author of the quote</source>
+            </trans-unit>
+
+			<trans-unit id="typo3-contentblocks.quoteimage.role.label" xml:space="preserve">
+                <source>Role</source>
+            </trans-unit>
+
+            <trans-unit id="typo3-contentblocks.quoteimage.role.description" xml:space="preserve">
+                <source>Role/Profession of Author</source>
+            </trans-unit>
+
+            <trans-unit id="typo3-contentblocks.quoteimage.authorimage.label" xml:space="preserve">
+                <source>Image of the author</source>
+            </trans-unit>
+
+            <trans-unit id="typo3-contentblocks.quoteimage.authorimage.description" xml:space="preserve">
+                <source></source>
+            </trans-unit>
+
+            <trans-unit id="typo3-contentblocks.quoteimage.bgcolor.label" xml:space="preserve">
+                <source>Background Color</source>
+            </trans-unit>
+
+            <trans-unit id="typo3-contentblocks.quoteimage.bgcolor.description" xml:space="preserve">
+                <source></source>
+            </trans-unit>
+
+        </body>
+    </file>
+</xliff>

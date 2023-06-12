@@ -1,0 +1,78 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<f:layout name="Default" />
+
+<f:section name="Main">
+
+    <f:asset.css identifier="content-block-team-card-be" href="CB:team-card/dist/EditorPreview.css" />
+    <f:asset.css identifier="content-block-team-card" href="CB:team-card/dist/Frontend.css" />
+
+
+    <div class="c-skom-teamcard text-center p-3 my-5 rounded-3 border">
+        <div class="c-skom-teamcard__photo" alt="profile Photo" class="img-fluid rounded-circle">
+            <f:image class="rounded-circle" image="{image}" width="125c" height="125c-33" />
+        </div>
+        <h3 class="c-skom-teamcard__name pt-3 text-dark">{name}</h3>
+        <f:if condition="{jobtitle}">
+            <p class="c-skom-teamcard__jobtitle text-primary"><strong>{jobtitle}</strong></p>
+        </f:if>
+        <f:if condition="{description}">
+            <p class="c-skom-teamcard__desc card-text">{description}</p>
+        </f:if>
+        <f:if condition="{phone}">
+            <div class="c-skom-teamcard__phone card-text">
+                <a href="tel:{phone}">
+                    <f:image src="EXT:bootstrap_package/Resources/Public/Images/Icons/Ionicons/android-call.svg"
+                        alt="Phone" width="20" height="20" />
+                    <span class="c-skom-teamcard__phonetext">{phone}</span>
+                </a>
+            </div>
+        </f:if>
+        <f:if condition="{email}">
+            <div class="c-skom-teamcard__email card-text">
+                <f:link.email email="{email}">
+                    <f:image src="EXT:bootstrap_package/Resources/Public/Images/Icons/Ionicons/email.svg" alt="E-Mail"
+                        width="25" height="25" />
+                    <span class="c-skom-teamcard__emailtext">{email}</span>
+                </f:link.email>
+            </div>
+        </f:if>
+        <div class="c-skom-teamcard__socialmedia">
+            <f:if condition="{facebook}">
+                <div class="c-skom-teamcard__facebook">
+                    <f:link.external uri="{facebook}" target="_blank">
+                        <f:image src="EXT:bootstrap_package/Resources/Public/Images/Icons/Ionicons/social-facebook.svg"
+                            alt="Facebook" width="25" height="25" />
+                    </f:link.external>
+                </div>
+            </f:if>
+            <f:if condition="{twitter}">
+                <div class="c-skom-teamcard__twitter">
+                    <f:link.external uri="{twitter}" target="_blank">
+                        <f:image src="EXT:bootstrap_package/Resources/Public/Images/Icons/Ionicons/social-twitter.svg"
+                            alt="Twitter" width="25" height="25" />
+                    </f:link.external>
+                </div>
+            </f:if>
+            <f:if condition="{Instagram}">
+                <div class="c-skom-teamcard__instagram">
+                    <f:link.external uri="{Instagram}" target="_blank">
+                        <f:image src="EXT:bootstrap_package/Resources/Public/Images/Icons/Ionicons/social-instagram.svg"
+                            alt="Instagram" width="25" height="25" />
+                    </f:link.external>
+                </div>
+            </f:if>
+            <f:if condition="{linkedin}">
+                <div class="c-skom-teamcard__linkedin">
+                    <f:link.external uri="{linkedin}" target="_blank">
+                        <f:image src="EXT:bootstrap_package/Resources/Public/Images/Icons/Ionicons/social-linkedin.svg"
+                            alt="LinkedIn" width="25" height="25" />
+                    </f:link.external>
+                </div>
+            </f:if>
+        </div>
+    </div>
+
+</f:section>
+
+</html>

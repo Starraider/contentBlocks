@@ -1,0 +1,62 @@
+group: common
+fields:
+  -
+    identifier: height
+    type: Text
+    properties:
+      max: ''
+      size: '150'
+      default: ''
+      placeholder: ''
+      required: false
+      trim: true
+      autocomplete: false
+  -
+    identifier: autoplayInterval
+    type: Number
+    properties:
+      max: 10000
+      size: '200'
+      default: 0
+      placeholder: 'Wert in ms eintragen (z.B. 1000 = 1 Sekunde)'
+      required: false
+      trim: true
+      autocomplete: false
+  -
+    identifier: showControlsInside
+    type: Checkbox
+    properties:
+      default: ''
+      required: false
+      items:
+        'yes': 'Sollen Pfeile (Vor, zurück) im Karussell angezeigt werden?'
+  -
+    identifier: showControlsBottom
+    type: Checkbox
+    properties:
+      default: ''
+      required: false
+      items:
+        'yes': 'Sollen Steuerungselemente (Vor, zurück, Index) unter dem Karussell angezeigt werden?'
+  -
+    identifier: showNavArrowsBottom
+    type: Checkbox
+    properties:
+      default: ''
+      required: false
+      items:
+        'yes': 'Sollen bei den unteren Steuerungselementen die Navigationselemente (Vor, zurück) angezeigt werden?'
+  -
+    identifier: showCaption
+    type: Checkbox
+    properties:
+      default: ''
+      required: false
+      items:
+        'yes': 'Soll eine Bildbeschreibung / Unterschrift (je Bild) unter den Bildern angezeigt werden?'
+  -
+      identifier: images
+      type: Image
+      properties:
+          minItems: '1'
+          maxItems: '6'

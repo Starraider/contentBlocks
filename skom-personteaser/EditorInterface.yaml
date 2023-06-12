@@ -1,0 +1,30 @@
+group: common
+fields:
+    -
+        identifier: picture
+        type: Image
+        properties:
+            minItems: '1'
+            maxItems: '1'
+    -
+        identifier: Name
+        type: Text
+        properties:
+            max: ''
+            size: '40'
+            default: ''
+            placeholder: 'Prof. Dr. Peter Mustermann'
+            required: true
+            trim: true
+            autocomplete: false
+    -
+        identifier: job
+        type: Text
+        properties:
+            max: ''
+            size: '40'
+            default: ''
+            placeholder: ''
+            required: true
+            trim: true
+            autocomplete: false

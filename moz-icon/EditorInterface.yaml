@@ -1,0 +1,27 @@
+group: common
+fields:
+  - identifier: iconString
+    type: Text
+    properties:
+      max: '30'
+      size: '200'
+      default: ''
+      placeholder: ''
+      required: false
+      trim: true
+      autocomplete: false
+
+  - identifier: icon
+    type: Select
+    properties:
+      prependLabel: ''
+      items:
+        'fab fa-twitter': ' Twitter'
+        'fab fa-facebook': ' Facebook'
+        'fab fa-instagram': ' Instagram'
+        'fab fa-youtube': ' YouTube'
+        'fab fa-linkedin': 'Linkedin'
+        'fab fa-xing': 'Xing'
+        'fa-regular fa-calendar': 'Kalender'
+        'fa fa-user': 'Benutzer'
+        'fa-regular fa-file-lines': 'Dokument'

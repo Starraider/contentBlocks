@@ -1,0 +1,53 @@
+/* Breakpoints
+-------------------------------------------------- */
+/*---------------------------------------------
+// Creates an Element
+//---------------------------------------------*/
+.c-abz-list__header {
+  font-family: PTSansBold, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1.1rem;
+  color: #ffffff;
+  background-color: #8dc7da;
+}
+
+.c-abz-list__list {
+  height: 550px;
+  overflow-y: scroll;
+  margin-bottom: -100px;
+}
+
+.c-abz-list__abz {
+  border-top: none;
+  border-bottom: none;
+}
+.c-abz-list__abz:last-child {
+  margin-bottom: 100px;
+}
+
+.c-abz-list__title {
+  font-size: 1rem;
+  color: black;
+  font-family: PTSansBold, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.c-abz-list__title a, .c-abz-list__title a:visited, .c-abz-list__title a:focus {
+  color: black !important;
+}
+
+.c-abz-list__footer {
+  border-top: none;
+  background: linear-gradient(180deg, rgba(245, 245, 245, 0) 0%, rgb(245, 245, 245) 80%);
+  z-index: 999999;
+  height: 120px;
+}
+.c-abz-list__footer:hover, .c-abz-list__footer:visited, .c-abz-list__footer:focus {
+  background: linear-gradient(180deg, rgba(245, 245, 245, 0) 0%, rgb(245, 245, 245) 80%);
+}
+
+.c-abz-list__icon {
+  background-color: white;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  padding: 10px;
+}
+
+/*# sourceMappingURL=Frontend.css.map */

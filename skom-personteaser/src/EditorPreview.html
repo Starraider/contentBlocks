@@ -1,0 +1,17 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:be="http://typo3.org/ns/TYPO3/CMS/Backend/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:asset.css identifier="content-block-skom-personteaser-be" href="CB:skom-personteaser/dist/EditorPreview.css" />
+
+<be:link.editRecord uid="{data.uid}" table="tt_content" id="element-tt_content-{data.uid}">
+    <div class="c-skom-personteaser">
+        <div class="c-skom-personteaser__picture">
+            <f:image class="rounded-circle" image="{picture}" width="80c" height="80c-33" />
+        </div>
+        <div class="c-skom-personteaser__text">
+            <div class="c-skom-personteaser__name">{Name}</div>
+            <div class="c-skom-personteaser__job">{job}</div>
+        </div>
+    </div>
+</be:link.editRecord>
+
+</html>

@@ -1,0 +1,72 @@
+/**
+ * used as workaround to get breakpoints for contentBlock
+ * Better: Find a more solid and non-redundant solution
+ */
+/* Breakpoints
+-------------------------------------------------- */
+.moz-carousel__figure {
+  display: block;
+  width: auto;
+  height: 100%;
+  margin-bottom: 0;
+}
+
+.moz-carousel__img {
+  display: block;
+  width: 100% !important;
+  object-fit: cover;
+  height: 100%;
+}
+
+@media (max-width: 992px) {
+  .moz-carousel__img {
+    max-height: var(--moz-carousel-max-height--mobile);
+  }
+}
+.moz-carousel__caption {
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  min-height: var(--moz-carousel-caption-height);
+}
+
+.moz-carousel__controls {
+  position: relative;
+  height: var(--moz-carousel-caption-height);
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.moz-carousel .carousel-indicators {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  top: 0;
+  opacity: 0.5;
+}
+
+.moz-carousel .carousel-indicators [data-bs-target] {
+  background: transparent;
+  width: var(--moz-carousel-indicator-size);
+  height: var(--moz-carousel-indicator-size);
+  border: 2px solid var(--moz-carousel-indicator-color);
+  border-radius: 50%;
+}
+
+.moz-carousel .carousel-indicators [data-bs-target]:hover {
+  background: var(--moz-carousel-indicator-color);
+}
+
+.moz-carousel .carousel-indicators button.active {
+  opacity: 1;
+}
+
+.moz-carousel .carousel-control-next,
+.moz-carousel .carousel-control-prev {
+  height: 100%;
+  color: var(--primary);
+}
+
+/*# sourceMappingURL=Frontend.css.map */
+
+/*# sourceMappingURL=Frontend.css.map */

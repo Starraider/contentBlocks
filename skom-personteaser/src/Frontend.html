@@ -1,0 +1,23 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<f:layout name="Default" />
+
+<f:section name="Main">
+
+    <f:asset.css identifier="content-block-skom-personteaser-be" href="CB:skom-personteaser/dist/EditorPreview.css" />
+    <f:asset.css identifier="content-block-skom-personteaser" href="CB:skom-personteaser/dist/Frontend.css" />
+    <f:asset.script identifier="content-block-skom-personteaser" src="CB:skom-personteaser/dist/Frontend.js" />
+
+    <div class="c-skom-personteaser">
+        <div class="c-skom-personteaser__picture">
+            <f:image class="rounded-circle" image="{picture}" width="80c" height="80c-33" />
+        </div>
+        <div class="c-skom-personteaser__text">
+            <div class="c-skom-personteaser__name">{Name}</div>
+            <div class="c-skom-personteaser__job">{job}</div>
+        </div>
+    </div>
+
+</f:section>
+
+</html>

@@ -1,0 +1,59 @@
+@import '../../../../../packages/dgvtbase/Resources/Public/Scss/breakpoints';
+
+.moz-topics {
+
+    min-height: 80vh;
+
+    .pagination {
+        gap: var(--moz-topics-pagination-gap);
+        flex-wrap: wrap;
+
+        .page-link {
+            background: var(--moz-topics-pagination-bg);
+            transition: none !important;
+
+            &:hover {
+                background: var(--primary);
+                filter: brightness(1.4);
+                color: white;
+            }
+
+            &.disabled {
+                opacity: .35 !important;
+            }
+
+            &.active {
+                background: var(--primary);
+                color: white;
+            }
+        }
+    }
+}
+
+.moz-topics__list {
+
+    margin: 2rem 0;
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li > a {
+            display: block;
+            padding: 1rem 1rem 1rem 0;
+            font-size: 1.2rem;
+            color: black !important;
+            font-weight: bold;
+            border-bottom: 1px solid var(--gray);
+            transition: var(--site-transition-quick);
+
+            &:hover {
+                background: var(--gray-light);
+                border-bottom: 1px solid var(--gray);
+                padding-left: 1.5rem;
+            }
+        }
+    }
+}
+

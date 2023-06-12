@@ -1,0 +1,48 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:be="http://typo3.org/ns/TYPO3/CMS/Backend/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<f:asset.css identifier="content-block-team-card-be" href="CB:team-card/dist/EditorPreview.css" />
+
+<be:link.editRecord uid="{data.uid}" table="tt_content" id="element-tt_content-{data.uid}">
+    <div class="team-card text-center">
+        <f:image image="{image}" />
+        <h3>{name}</h3>
+        <p>{jobtitle}</p>
+        <p>{description}</p>
+        <div class="social-links">
+            <ul>
+                <f:if condition="{email}">
+                    <li>
+                        <f:image src="EXT:bootstrap_package/Resources/Public/Images/Icons/Ionicons/email.svg"
+                            alt="E-Mail" width="25" height="25" />
+                    </li>
+                </f:if>
+                <f:if condition="{facebook}">
+                    <li>
+                        <f:image src="EXT:bootstrap_package/Resources/Public/Images/Icons/Ionicons/social-facebook.svg"
+                            alt="Facebook" width="25" height="25" />
+                    </li>
+                </f:if>
+                <f:if condition="{twitter}">
+                    <li>
+                        <f:image src="EXT:bootstrap_package/Resources/Public/Images/Icons/Ionicons/social-twitter.svg"
+                            alt="Twitter" width="25" height="25" />
+                    </li>
+                </f:if>
+                <f:if condition="{Instagram}">
+                    <li>
+                        <f:image src="EXT:bootstrap_package/Resources/Public/Images/Icons/Ionicons/social-instagram.svg"
+                            alt="Instagram" width="25" height="25" />
+                    </li>
+                </f:if>
+                <f:if condition="{linkedin}">
+                    <li>
+                        <f:image src="EXT:bootstrap_package/Resources/Public/Images/Icons/Ionicons/social-linkedin.svg"
+                            alt="LinkedIn" width="25" height="25" />
+                    </li>
+                </f:if>
+            </ul>
+        </div>
+</be:link.editRecord>
+
+</html>

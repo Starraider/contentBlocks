@@ -1,0 +1,52 @@
+group: bausteine
+fields:
+    - identifier: image
+      type: Image
+      properties:
+        minItems: ''
+        maxItems: ''
+
+    - identifier: title
+      type: Text
+      properties:
+          max: ''
+          size: '300'
+          default: ''
+          placeholder: ''
+          required: false
+          trim: true
+          autocomplete: false
+
+    - identifier: desc
+      type: Textarea
+      properties:
+        max: '300'
+        rows: ''
+        cols: ''
+        default: ''
+        placeholder: ''
+        required: false
+        trim: true
+        enableRichtext: false
+
+    - identifier: isSmall
+      type: Checkbox
+      properties:
+        default: ''
+        required: false
+        items:
+          'yes': 'Soll die kleine Container-Ansicht verwendet werden?'
+
+    - identifier: link
+      type: Url
+      linkPopup:
+        blindLinkFields: 'target,title'
+        blindLinkOptions: 'folder,spec,telefone,mail'
+        windowOpenParameters: 'height=800,width=600'
+      properties:
+        max: ''
+        size: '300'
+        default: ''
+        placeholder: ''
+        required: false
+        autocomplete: false

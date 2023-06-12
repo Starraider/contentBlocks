@@ -1,0 +1,104 @@
+group: common
+fields:
+  - identifier: abz
+    type: Collection
+    properties:
+      collapseAll: true
+      enabledControls:
+        delete: true
+        dragdrop: true
+        new: true
+        hide: true
+        info: true
+        localize: true
+      enableSorting: true
+      expandSingle: true
+      fields:
+        -
+            identifier: title
+            type: Text
+            properties:
+                max: ''
+                size: '40'
+                default: ''
+                placeholder: ''
+                required: true
+                trim: true
+                autocomplete: false
+        -
+            identifier: street1
+            type: Text
+            properties:
+                max: ''
+                size: '40'
+                default: ''
+                placeholder: ''
+                required: true
+                trim: true
+                autocomplete: false
+        -
+            identifier: street2
+            type: Text
+            properties:
+                max: ''
+                size: '40'
+                default: ''
+                placeholder: ''
+                required: false
+                trim: true
+                autocomplete: false
+        -
+            identifier: zip
+            type: Text
+            properties:
+                max: '5'
+                size: '5'
+                default: ''
+                placeholder: ''
+                required: true
+                trim: true
+                autocomplete: false
+        -
+            identifier: city
+            type: Text
+            properties:
+                max: ''
+                size: '40'
+                default: ''
+                placeholder: ''
+                required: true
+                trim: true
+                autocomplete: false
+        -
+            identifier: mail
+            type: Email
+            properties:
+                size: '40'
+                default: ''
+                placeholder: ''
+                required: false
+                trim: true
+                autocomplete: true
+        -
+            identifier: phone
+            type: Tel
+            properties:
+                size: '40'
+                default: ''
+                placeholder: ''
+                required: false
+                trim: true
+                autocomplete: false
+        -
+            identifier: linktopage
+            type: Url
+            properties:
+                max: ''
+                size: '60'
+                default: ''
+                placeholder: ''
+                required: true
+                autocomplete: false
+      maxItems: 20
+      minItems: 1
+      useAsLabel: title

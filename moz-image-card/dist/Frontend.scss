@@ -1,0 +1,113 @@
+/**
+ * Text/Image Hover Element.
+ * Behaviour: On hover, show hiden text block with animation
+ * Behaviour mobile: Show everything without the need to hover
+ *
+ * Note: please use global css vars wherever it makes sense
+ *
+ * @author: Darius Mozgiel | mozgiel.de
+ */
+
+@import '../../../../../packages/dgvtbase/Resources/Public/Scss/breakpoints';
+
+.moz-image-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--moz-header-border-radius) 0 var(--moz-header-border-radius) var(--moz-header-border-radius);
+
+    &__img {
+        min-height: 250px; // TODO variable
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    &:hover {
+        text-decoration: none !important;
+    }
+
+    &__content {
+        text-align: center;
+        position: relative;
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background: var(--moz-image-card-bg);
+        color: var(--moz-image-card-color);
+        transition: var(--site-transition-quick);
+
+        @media( min-width: $md ) {
+            position: absolute;
+            width: 100%;
+            height: 100px; //TODO variable
+            bottom: 0; //calc( -100% + 80px );
+            left: 0;
+            z-index: 1;
+        }
+
+        h2,h3,h4 {
+            color: var(--moz-image-card-headline-color);
+            margin-bottom: 0;
+        }
+
+        p {
+            margin-top: 1rem;
+
+            @media( min-width: $md ) {
+                display: none;
+                position: relative;
+                transition: var(--site-transition-quick);
+            }
+        }
+    }
+
+    @media( min-width: $md ) {
+        &:hover {
+            .moz-image-card__content {
+                bottom: 0;
+                height: 100%;
+
+                p {
+                    display: block;
+                    margin-bottom: 0;
+                    font-size: 1rem;
+                    line-height: 1;
+                }
+            };
+        }
+    }
+
+    &.card--is-small {
+
+        .moz-image-card__img {
+            height: 220px; // TODO variable
+        }
+
+        .moz-image-card__content {
+            height: auto;
+            padding: 1rem;
+
+            @media( min-width: $md ) {
+                padding: .5rem 1rem;
+                height: 70px; // TODO variable
+            }
+
+            h1,h2,h3,h4  {
+                font-size: 1rem;
+            }
+        }
+
+        @media( min-width: $md ) {
+            &:hover {
+                .moz-image-card__content {
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+

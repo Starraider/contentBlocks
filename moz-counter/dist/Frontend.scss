@@ -1,0 +1,67 @@
+/**
+ * Counter with upcounting animation when elements comes into viewport
+ *
+ * Note: please use global css vars wherever it makes sense
+ *
+ * @author: Darius Mozgiel | mozgiel.de
+ */
+
+@import '../../../../../packages/dgvtbase/Resources/Public/Scss/breakpoints';
+
+:root {
+    --moz-counter-gap: 10px;
+}
+
+.moz-counter__wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    @media(min-width: $md) {
+        justify-content: end;
+    }
+}
+
+.moz-counter {
+    font-family: var(--site-font-family--bold);
+    font-size: var(--moz-counter--fs--mobile);
+    color: var(--moz-counter--color);
+    display: inline-flex;
+    align-items: end;
+    //width: 100%;
+    line-height: 1;
+
+    @media(min-width: $md) {
+        font-size: var(--moz-counter--fs);
+    }
+
+    // Styles
+    &.moz-counter--style-before {
+        flex-direction: row-reverse;
+    }
+
+    &.moz-counter--style-after {
+
+    }
+
+    &.moz-counter--style-text-before {
+        flex-direction: row-reverse;
+
+        .moz-counter__unit {
+            font-size: 60%;
+            margin-right: var(--moz-counter-gap);
+            position: relative;
+            top: -5px;
+        }
+    }
+
+    &.moz-counter--style-text-after {
+
+        .moz-counter__unit {
+            font-size: 60%;
+            margin-left: var(--moz-counter-gap);
+            position: relative;
+            top: -5px;
+        }
+    }
+}

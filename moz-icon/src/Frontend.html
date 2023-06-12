@@ -1,0 +1,23 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+    <f:layout name="Default" />
+
+    <f:section name="Main">
+
+        <f:asset.css identifier="content-block-moz-icon-be" href="CB:moz-icon/dist/EditorPreview.css"/>
+        <f:asset.css identifier="content-block-moz-icon" href="CB:moz-icon/dist/Frontend.css"/>
+        <f:asset.script identifier="content-block-moz-icon" src="CB:moz-icon/dist/Frontend.js"/>
+
+        <div class="moz-icon">
+            <f:if condition="{icon}">
+                <f:then>
+                    <i class="{icon}"></i>
+                </f:then>
+                <f:else>
+                    <i class="{iconString}"></i>
+                </f:else>
+            </f:if>
+        </div>
+
+    </f:section>
+</html>
