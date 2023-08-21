@@ -88,6 +88,16 @@
             &.moz-header__title {
                 max-width: var(--moz-header-content-maxwidth);
             }
+
+            .moz-header__img {
+                @media( min-width: $md ) {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 48%;
+                    height: 100%;
+                }
+            }
         }
 
         .moz-header__img {
@@ -96,14 +106,6 @@
             display: block;
             object-fit: cover;
             margin-bottom: 0;
-
-            @media( min-width: $md ) {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 48%;
-                height: 100%;
-            }
         }
 
         // behaves like halfwidth, but has a rounded border on the bottom left
