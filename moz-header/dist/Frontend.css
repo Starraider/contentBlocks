@@ -77,6 +77,16 @@
   height: 100%;
   display: block;
   object-fit: cover;
+  margin-bottom: 0;
+}
+@media (min-width: 992px) {
+  .moz-header.moz-header--has-image .moz-header__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 48%;
+    height: 100%;
+  }
 }
 .moz-header.moz-header--has-image.moz-header--halfwidth-rounded {
   border-bottom-left-radius: var(--moz-header-border-radius);
