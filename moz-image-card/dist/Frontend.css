@@ -7,10 +7,6 @@
  *
  * @author: Darius Mozgiel | mozgiel.de
  */
-/**
- * used as workaround to get breakpoints for contentBlock
- * Better: Find a more solid and non-redundant solution
- */
 /* Breakpoints
 -------------------------------------------------- */
 .moz-image-card {
@@ -24,6 +20,7 @@
   width: 100%;
   height: auto;
   object-fit: cover;
+  margin-bottom: 0;
 }
 .moz-image-card:hover {
   text-decoration: none !important;
