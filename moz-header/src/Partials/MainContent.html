@@ -1,0 +1,47 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<f:variable name="skylineClass" value="{f:if(condition: '{skyline}', then: 'has-skyline')}"></f:variable>
+<div id="c{data.uid}"
+     class="moz-header moz-header--{layout} moz-header--{f:if(condition: '{image}', then: 'has-image', else: 'without-image')} moz-frame frame frame-space-before-{data.space_before_class} frame-space-after-{data.space_after_class}">
+
+    <f:if condition="{image}">
+        <div class="moz-header__img-wrapper">
+            <f:for each="{image}" as="img">
+                <f:image class="moz-header__img" image="{img}"/>
+            </f:for>
+        </div>
+    </f:if>
+    <div class="moz-header__content {skylineClass}">
+        <!-- if condition not layout == img-only -->
+        <f:if condition="{layout} != 'img-only'">
+            <div class="moz-header__inner">
+                <span class="moz-header__skyline">{skyline}</span>
+                <f:if condition="isMainTitle">
+
+                    <f:then>
+                        <h1 class="moz-header__title">
+                            <f:format.stripTags allowedTags="<br><a>">{title}</f:format.stripTags>
+                        </h1>
+                    </f:then>
+                    <f:else>
+                        <h2 class="moz-header__title">
+                            <f:format.stripTags allowedTags="<br><a>">{title}</f:format.stripTags>
+                        </h2>
+                    </f:else>
+                </f:if>
+                <f:if condition="teaser">
+                    <f:format.html>{teaser}</f:format.html>
+                </f:if>
+                <f:if condition="{buttonLink} && {buttonText}">
+                    <f:link.typolink parameter="{buttonLink}" class="moz-header__btn btn btn-primary">{buttonText}
+                    </f:link.typolink>
+                </f:if>
+            </div>
+        </f:if>
+
+        <f:if condition="{hasSocialshare} == 1">
+            <f:render partial="Share"></f:render>
+        </f:if>
+    </div>
+</div>
+</html>

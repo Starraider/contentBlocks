@@ -34,7 +34,7 @@
             </trans-unit>
 
             <trans-unit id="typo3-contentblocks.moz-header.buttonLink.description" xml:space="preserve">
-                <source>Button-Link</source>
+                <source>Button-Link (in der nur-Bildvariante ist das Bild stattdessen verlinkt)</source>
             </trans-unit>
 
             <trans-unit id="typo3-contentblocks.moz-header.buttonText.label" xml:space="preserve">

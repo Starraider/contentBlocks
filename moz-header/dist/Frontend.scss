@@ -116,6 +116,7 @@
         }
 
         // full width image background variation
+        &.moz-header--img-only,
         &.moz-header--fullwidth {
             background: none !important;
             height: var(--moz-header-height--mobile);
@@ -181,8 +182,24 @@
                     align-items: start;
                 }
 
-                &.has-skyline {
 
+            }
+        }
+
+        &.moz-header--img-only {
+            height: auto !important;
+
+            .moz-header__img-wrapper {
+                position: relative;
+            }
+            .moz-header__content {
+                display: none;
+            }
+        }
+
+        &.moz-header--fullwidth {
+            .moz-header__content {
+                &.has-skyline {
                     .moz-header__share {
                         @media( min-width: $md ) {
                             // align-items start + 30px margin because of the skyline
@@ -191,6 +208,7 @@
                     }
                 }
             }
+
         }
     }
 

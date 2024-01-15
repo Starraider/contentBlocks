@@ -92,7 +92,7 @@
   border-bottom-left-radius: var(--moz-header-border-radius);
   overflow: hidden;
 }
-.moz-header.moz-header--has-image.moz-header--fullwidth {
+.moz-header.moz-header--has-image.moz-header--img-only, .moz-header.moz-header--has-image.moz-header--fullwidth {
   background: none !important;
   height: var(--moz-header-height--mobile);
   border-bottom-left-radius: var(--moz-header-border-radius);
@@ -100,11 +100,11 @@
   overflow: hidden;
 }
 @media (min-width: 992px) {
-  .moz-header.moz-header--has-image.moz-header--fullwidth {
+  .moz-header.moz-header--has-image.moz-header--img-only, .moz-header.moz-header--has-image.moz-header--fullwidth {
     height: var(--moz-header-height);
   }
 }
-.moz-header.moz-header--has-image.moz-header--fullwidth .moz-header__img-wrapper {
+.moz-header.moz-header--has-image.moz-header--img-only .moz-header__img-wrapper, .moz-header.moz-header--has-image.moz-header--fullwidth .moz-header__img-wrapper {
   position: absolute;
   top: 0;
   left: 0;
@@ -112,7 +112,7 @@
   height: 100%;
   z-index: -1;
 }
-.moz-header.moz-header--has-image.moz-header--fullwidth .moz-header__content {
+.moz-header.moz-header--has-image.moz-header--img-only .moz-header__content, .moz-header.moz-header--has-image.moz-header--fullwidth .moz-header__content {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -122,16 +122,17 @@
   background: var(--primary--transparent);
   color: var(--moz-header--fullwidth-color);
 }
-.moz-header.moz-header--has-image.moz-header--fullwidth .moz-header__content .moz-header__skyline,
+.moz-header.moz-header--has-image.moz-header--img-only .moz-header__content .moz-header__skyline,
+.moz-header.moz-header--has-image.moz-header--img-only .moz-header__content .moz-header__title, .moz-header.moz-header--has-image.moz-header--fullwidth .moz-header__content .moz-header__skyline,
 .moz-header.moz-header--has-image.moz-header--fullwidth .moz-header__content .moz-header__title {
   color: var(--moz-header--fullwidth-color);
   margin-bottom: 0 !important;
 }
-.moz-header.moz-header--has-image.moz-header--fullwidth .moz-header__content .moz-header__share {
+.moz-header.moz-header--has-image.moz-header--img-only .moz-header__content .moz-header__share, .moz-header.moz-header--has-image.moz-header--fullwidth .moz-header__content .moz-header__share {
   display: flex;
   justify-content: end;
 }
-.moz-header.moz-header--has-image.moz-header--fullwidth .moz-header__content .moz-header__share .moz-icon__wrapper {
+.moz-header.moz-header--has-image.moz-header--img-only .moz-header__content .moz-header__share .moz-icon__wrapper, .moz-header.moz-header--has-image.moz-header--fullwidth .moz-header__content .moz-header__share .moz-icon__wrapper {
   font-size: 1rem;
   padding: 1rem;
   background: var(--link__icon--bg);
@@ -139,22 +140,31 @@
   text-decoration: none !important;
 }
 @media (min-width: 992px) {
-  .moz-header.moz-header--has-image.moz-header--fullwidth .moz-header__content .moz-header__share .moz-icon__wrapper {
+  .moz-header.moz-header--has-image.moz-header--img-only .moz-header__content .moz-header__share .moz-icon__wrapper, .moz-header.moz-header--has-image.moz-header--fullwidth .moz-header__content .moz-header__share .moz-icon__wrapper {
     font-size: 1.5rem;
     padding: 1.15rem;
   }
 }
 @media (min-width: 992px) {
-  .moz-header.moz-header--has-image.moz-header--fullwidth .moz-header__content .moz-header__share {
+  .moz-header.moz-header--has-image.moz-header--img-only .moz-header__content .moz-header__share, .moz-header.moz-header--has-image.moz-header--fullwidth .moz-header__content .moz-header__share {
     margin-top: 0;
   }
 }
 @media (min-width: 992px) {
-  .moz-header.moz-header--has-image.moz-header--fullwidth .moz-header__content {
+  .moz-header.moz-header--has-image.moz-header--img-only .moz-header__content, .moz-header.moz-header--has-image.moz-header--fullwidth .moz-header__content {
     display: flex;
     justify-content: space-between;
     align-items: start;
   }
+}
+.moz-header.moz-header--has-image.moz-header--img-only {
+  height: auto !important;
+}
+.moz-header.moz-header--has-image.moz-header--img-only .moz-header__img-wrapper {
+  position: relative;
+}
+.moz-header.moz-header--has-image.moz-header--img-only .moz-header__content {
+  display: none;
 }
 @media (min-width: 992px) {
   .moz-header.moz-header--has-image.moz-header--fullwidth .moz-header__content.has-skyline .moz-header__share {

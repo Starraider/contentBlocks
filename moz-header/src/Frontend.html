@@ -3,42 +3,22 @@
     <f:layout name="Default" />
     <f:section name="Main">
         <f:variable name="skylineClass" value="{f:if(condition: '{skyline}', then: 'has-skyline')}"></f:variable>
+
         <f:asset.css identifier="content-block-moz-header-be" href="CB:moz-header/dist/EditorPreview.css"/>
         <f:asset.css identifier="content-block-moz-header" href="CB:moz-header/dist/Frontend.css"/>
         <f:asset.script identifier="content-block-moz-header" src="CB:moz-header/dist/Frontend.js"/>
-        <div id="c{data.uid}" class="moz-header moz-header--{layout} moz-header--{f:if(condition: '{image}', then: 'has-image', else: 'without-image')} moz-frame frame frame-space-before-{data.space_before_class} frame-space-after-{data.space_after_class}">
 
-            <f:if condition="{image}">
-                <div class="moz-header__img-wrapper">
-                    <f:for each="{image}" as="img">
-                        <f:image class="moz-header__img" image="{img}" />
-                    </f:for>
-                </div>
-            </f:if>
-            <div class="moz-header__content {skylineClass}">
-                <div class="moz-header__inner">
-                    <span class="moz-header__skyline">{skyline}</span>
-                    <f:if condition="isMainTitle">
+        <!-- wrap the content element with a link to the page if the buttonLink is set -->
+        <f:if condition="{buttonLink} && {layout} == 'img-only'">
+            <f:then>
+                <f:link.typolink parameter="{buttonLink}">
+                    <f:render partial="MainContent" arguments="{_all}" />
+                </f:link.typolink>
+            </f:then>
+            <f:else>
+                <f:render partial="MainContent" arguments="{_all}" />
+            </f:else>
+        </f:if>
 
-                        <f:then>
-                            <h1 class="moz-header__title"><f:format.stripTags allowedTags="<br><a>">{title}</f:format.stripTags></h1>
-                        </f:then>
-                        <f:else>
-                            <h2 class="moz-header__title"><f:format.stripTags allowedTags="<br><a>">{title}</f:format.stripTags></h2>
-                        </f:else>
-                    </f:if>
-                    <f:if condition="teaser">
-                        <f:format.html>{teaser}</f:format.html>
-                    </f:if>
-                    <f:if condition="{buttonLink} && {buttonText}">
-                        <f:link.typolink parameter="{buttonLink}" class="moz-header__btn btn btn-primary">{buttonText}</f:link.typolink>
-                    </f:if>
-                </div>
-
-                <f:if condition="{hasSocialshare} == 1">
-                    <f:render partial="Share"></f:render>
-                </f:if>
-            </div>
-        </div>
     </f:section>
 </html>
