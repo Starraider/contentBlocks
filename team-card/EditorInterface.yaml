@@ -46,13 +46,15 @@ fields:
           size: 20
           trim: true
     - identifier: phone
-      type: Tel
+      type: Text
       properties:
-          autocomplete: true
-          default: 0
+          max: '100'
+          size: '50'
+          default: ''
+          placeholder: ''
           required: false
-          size: 20
-          trim: true
+          trim: false
+          autocomplete: false
     - identifier: facebook
       type: Url
       properties:
