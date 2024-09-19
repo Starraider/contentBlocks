@@ -1,0 +1,21 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+    <f:layout name="Default" />
+
+    <f:section name="Main">
+
+        <f:asset.css identifier="content-block-moz-loadingspinner-be" href="CB:moz-loadingspinner/dist/EditorPreview.css"/>
+        <f:asset.css identifier="content-block-moz-loadingspinner" href="CB:moz-loadingspinner/dist/Frontend.css"/>
+        <f:asset.script identifier="content-block-moz-loadingspinner" src="CB:moz-loadingspinner/dist/Frontend.js"/>
+
+        <div class="moz-loadingspinner d-none">
+            <i class="fa fa-spinner fa-pulse fa-3x fa-fw text-primary mb-2"></i>
+            <h2 class="moz-loadingspinner__title">{data.header}</h2>
+            <p class="moz-loadingspinner__desc">{description}</p>
+            <div class="moz-loadingspinner__hints"><f:format.html>{hints}</f:format.html></div>
+        </div>
+
+        <div id="MozLsSelector" data-selector="#beitrittsformular-2035"></div>
+
+    </f:section>
+</html>

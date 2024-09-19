@@ -1,0 +1,18 @@
+.moz-loadingspinner {
+
+    &__hints {
+        p {
+            display: none;
+
+            &.active {
+                display: block;
+            }
+        }
+    }
+
+    &__desc {
+        @media( min-width: 768px ) {
+            max-width: 75%;
+        }
+    }
+}

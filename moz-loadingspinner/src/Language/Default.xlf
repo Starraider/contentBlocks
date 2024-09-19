@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<xliff version="1.0">
+    <file datatype="plaintext"
+            original="messages"
+            source-language="en"
+            product-name="text">
+        <header/>
+        <body>
+            <trans-unit id="typo3-contentblocks.moz-loadingspinner.title" xml:space="preserve">
+                <source>Loading Spinner</source>
+            </trans-unit>
+            <trans-unit id="typo3-contentblocks.moz-loadingspinner.description" xml:space="preserve">
+                <source>Loading Spinner - moz-loadingspinner created by Content Block Builder.</source>
+            </trans-unit>
+
+            <trans-unit id="typo3-contentblocks.moz-loadingspinner.description.label" xml:space="preserve">
+                <source>Beschreibung/Anweisung</source>
+            </trans-unit>
+
+            <trans-unit id="typo3-contentblocks.moz-loadingspinner.description.description" xml:space="preserve">
+                <source></source>
+            </trans-unit>
+
+            <trans-unit id="typo3-contentblocks.moz-loadingspinner.image.label" xml:space="preserve">
+                <source>Begleitbild</source>
+            </trans-unit>
+
+            <trans-unit id="typo3-contentblocks.moz-loadingspinner.image.description" xml:space="preserve">
+                <source></source>
+            </trans-unit>
+
+            <trans-unit id="typo3-contentblocks.moz-loadingspinner.hints.label" xml:space="preserve">
+                <source>Tipps</source>
+            </trans-unit>
+
+            <trans-unit id="typo3-contentblocks.moz-loadingspinner.hints.description" xml:space="preserve">
+                <source>Zeilengetrennt</source>
+            </trans-unit>
+
+        </body>
+    </file>
+</xliff>

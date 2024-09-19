@@ -1,0 +1,17 @@
+{
+    "name": "typo3-contentblocks/moz-loadingspinner",
+    "description": "Content block created by Content Block Builder.",
+    "type": "typo3-contentblock",
+    "license": "GPL-2.0-or-later",
+	"authors": [
+		{
+			"name": "Darius Mozgiel",
+			"email": "darius@mozgiel.de",
+			"homepage": "https://mozgiel.de",
+			"role": "Developer"
+		}
+	],
+    "require": {
+        "typo3-contentblocks/contentblocks-reg-api": "*"
+    }
+}

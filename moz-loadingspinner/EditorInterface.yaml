@@ -1,0 +1,24 @@
+group: common
+fields:
+  - identifier: description
+    type: Textarea
+    properties:
+      max: ''
+      rows: ''
+      cols: ''
+      default: ''
+      placeholder: ''
+      required: false
+      trim: true
+      enableRichtext: false
+  - identifier: hints
+    type: Textarea
+    properties:
+      max: ''
+      rows: '10'
+      cols: ''
+      default: ''
+      placeholder: ''
+      required: false
+      trim: true
+      enableRichtext: true
