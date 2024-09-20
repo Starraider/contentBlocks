@@ -16,6 +16,7 @@
 
       let _this = this;
       this.selector = null;
+      this.wasClicked = false;
 
       this.init = function( selector ) {
 
@@ -25,22 +26,23 @@
         console.log(this.selector);
       }
 
+      $(selector + ' button[type="submit"]').on('click', function( e ) {
+        console.log('clicked');
+        if( _this.wasClicked ) {
+          return;
+        }
+        e.preventDefault();
+        _this.wasClicked = true;
+
+        $(selector).addClass('d-none');
+        $('.moz-loadingspinner').removeClass('d-none');
+        $(selector + ' button[type="submit"]').trigger('click');
+      });
     }
 
     var selector = $('#MozLsSelector').data('selector');
-    // console.log(selector);
-    // listen to click on selector
-    $(selector + ' button[type="submit"]').on('click', function( e ) {
-      console.log('clicked');
-      e.preventDefault();
-      // show spinner
-      $(selector).addClass('d-none');
-      $('.moz-loadingspinner').removeClass('d-none');
-      setTimeout(function(){
-        // submit the form
-        $(selector + ' button[type="submit"]').click();
-      }, 3000);
-    });
+    let mozLoadingSpinner = new MozLoadingSpinner();
+    mozLoadingSpinner.init( selector );
 
   });
 

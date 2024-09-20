@@ -11,6 +11,14 @@ fields:
       required: false
       trim: true
       enableRichtext: false
+  - identifier: selector
+    type: Text
+    properties:
+      max: ''
+      default: ''
+      placeholder: ''
+      required: false
+      trim: true
   - identifier: hints
     type: Textarea
     properties:
