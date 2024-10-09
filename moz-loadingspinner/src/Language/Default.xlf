@@ -36,7 +36,12 @@
             <trans-unit id="typo3-contentblocks.moz-loadingspinner.hints.description" xml:space="preserve">
                 <source>Zeilengetrennt</source>
             </trans-unit>
-
+			<trans-unit id="typo3-contentblocks.moz-loadingspinner.pages.label" xml:space="preserve">
+				<source>Explizite Formularseiten</source>
+			</trans-unit>
+			<trans-unit id="typo3-contentblocks.moz-loadingspinner.pages.description" xml:space="preserve">
+				<source>Wenn der Loading-Spinner nur auf bestimmten Seiten angezeigt werden soll, kann hier komma-separiert die Seitenzahl angegeben werden (z.B. 1,8 für Seite 1 und Seite 8).</source>
+			</trans-unit>
         </body>
     </file>
 </xliff>

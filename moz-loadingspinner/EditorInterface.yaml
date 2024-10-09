@@ -19,6 +19,14 @@ fields:
       placeholder: ''
       required: false
       trim: true
+  - identifier: pages
+    type: Text
+    properties:
+      max: ''
+      default: ''
+      placeholder: ''
+      required: false
+      trim: true
   - identifier: hints
     type: Textarea
     properties:
