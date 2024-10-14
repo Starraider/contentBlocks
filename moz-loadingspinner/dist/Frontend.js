@@ -25,7 +25,6 @@
         this.selector = selector;
         // Check if pages is a string with commas, if not and it is an int, create an array with only this value
         this.pages = pages.toString().split(',');
-        console.log(this.pages);
       }
 
       $(selector + ' button[type="submit"]').on('click', function (e) {
