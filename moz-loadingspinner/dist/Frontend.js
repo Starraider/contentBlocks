@@ -20,24 +20,22 @@
       this.currentPage = null;
       this.wasClicked = false;
 
-      this.init = function( selector, pages ) {
+      this.init = function (selector, pages) {
 
         this.selector = selector;
-        // pages is a comma separated list of page ids, example: 1,2,3 explode it to an array
-        this.pages = pages.split(',');
-        console.log( this.pages );
-        console.log('Init MozLoadingSpinner');
-        console.log(this.selector);
+        // Check if pages is a string with commas, if not and it is an int, create an array with only this value
+        this.pages = pages.toString().split(',');
+        console.log(this.pages);
       }
 
-      $(selector + ' button[type="submit"]').on('click', function( e ) {
+      $(selector + ' button[type="submit"]').on('click', function (e) {
         let value = $(this).val();
         // if value and if pages is set and if value is in pages
-        if( _this.pages && ! _this.pages.includes(value) ) {
+        if (_this.pages && !_this.pages.includes(value)) {
           return;
         }
 
-        if( _this.wasClicked ) {
+        if (_this.wasClicked) {
           return;
         }
         e.preventDefault();
@@ -52,8 +50,8 @@
     var selector = $('#MozLsSelector').data('selector');
     var pages = $('#MozLsSelector').data('pages');
     let mozLoadingSpinner = new MozLoadingSpinner();
-    mozLoadingSpinner.init( selector, pages );
+    mozLoadingSpinner.init(selector, pages);
 
   });
 
-})( jQuery );
+})(jQuery);
