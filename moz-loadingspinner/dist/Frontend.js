@@ -51,6 +51,7 @@
         _this.wasClicked = true;
 
         window.scrollTo(0, 0);
+        setTimeout(function() { window.scrollTo(0, 0); }, 0);
         $(selector).addClass('d-none');
         $('.moz-loadingspinner').removeClass('d-none');
         $(selector + ' button[type="submit"]').trigger('click');
