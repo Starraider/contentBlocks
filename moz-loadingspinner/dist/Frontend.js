@@ -33,6 +33,8 @@
 
       this.initForm = function () {
         window.scrollTo(0, 0);
+        // timeout to prevent double trigger
+        setTimeout(function() { window.scrollTo(0, 0); }, 0);
       }
 
       $(selector + ' button[type="submit"]').on('click', function (e) {
