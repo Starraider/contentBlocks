@@ -13,7 +13,6 @@
   $(document).ready(function () {
 
     function MozLoadingSpinner() {
-
       let _this = this;
       this.selector = null;
       this.pages = null;
@@ -25,6 +24,15 @@
         this.selector = selector;
         // Check if pages is a string with commas, if not and it is an int, create an array with only this value
         this.pages = pages.toString().split(',');
+
+        // Check, if a form with the selector exists
+        if ($(selector).length) {
+          this.initForm();
+        }
+      }
+
+      this.initForm = function () {
+        window.scrollTo(0, 0);
       }
 
       $(selector + ' button[type="submit"]').on('click', function (e) {
@@ -40,6 +48,7 @@
         e.preventDefault();
         _this.wasClicked = true;
 
+        window.scrollTo(0, 0);
         $(selector).addClass('d-none');
         $('.moz-loadingspinner').removeClass('d-none');
         $(selector + ' button[type="submit"]').trigger('click');
