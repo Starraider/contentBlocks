@@ -27,15 +27,10 @@
 
         // Check, if a form with the selector exists
         if ($(selector).length) {
-          this.initForm();
+          // this.initForm();
         }
       }
 
-      this.initForm = function () {
-        window.scrollTo(0, 0);
-        // timeout to prevent double trigger
-        setTimeout(function() { window.scrollTo(0, 0); }, 0);
-      }
 
       $(selector + ' button[type="submit"]').on('click', function (e) {
         let value = $(this).val();
@@ -50,7 +45,7 @@
         e.preventDefault();
         _this.wasClicked = true;
 
-        window.scrollTo(0, 0);
+        setTimeout(function() { window.scrollTo(0, 0); }, 0);
         $(selector).addClass('d-none');
         $('.moz-loadingspinner').removeClass('d-none');
         $(selector + ' button[type="submit"]').trigger('click');
