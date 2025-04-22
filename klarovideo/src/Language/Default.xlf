@@ -12,11 +12,14 @@
                                 <trans-unit id="typo3-contentblocks.klarovideo.description" xml:space="preserve">
                                     <source>YouTube-Video DSGVO konform - klarovideo created by Content Block Builder.</source>
                                 </trans-unit>
-                    
-                        <trans-unit id="typo3-contentblocks.klarovideo.youtubecode.label" xml:space="preserve">
+
+                    	<trans-unit id="typo3-contentblocks.klarovideo.videoselector.label" xml:space="preserve">
+							<source>Player auswählen</source>
+						</trans-unit>
+                        <trans-unit id="typo3-contentblocks.klarovideo.videocode.label" xml:space="preserve">
                             <source>YouTube-/Vimeo-Videocode</source>
                         </trans-unit>
-                        <trans-unit id="typo3-contentblocks.klarovideo.youtubecode.description" xml:space="preserve">
+                        <trans-unit id="typo3-contentblocks.klarovideo.videocode.description" xml:space="preserve">
                             <source>The part after the = in the URL</source>
                         </trans-unit>
                         <trans-unit id="typo3-contentblocks.klarovideo.aspectratio.label" xml:space="preserve">

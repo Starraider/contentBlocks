@@ -1,6 +1,13 @@
 group: media
 fields:
-    - identifier: youtubecode
+    - identifier: videoselector
+      type: Select
+      properties:
+          prependLabel: ''
+          items:
+              - 'YouTube'
+              - 'Vimeo'
+    - identifier: videocode
       type: Text
       properties:
           max: '50'

@@ -2,30 +2,56 @@
 <f:layout name="Default" />
 
 <f:section name="Main">
-    <f:if condition="{youtubecode}">
-        <f:if condition="{aspectratio}==0">
-            <f:then>
-                <div class="ratio ratio-16x9">
-            </f:then>
-            <f:else if="{aspectratio}==1">
-                <div class="ratio ratio-4x3">
-            </f:else>
-            <f:else if="{aspectratio}==2">
-                <div class="ratio ratio-21x9">
-            </f:else>
-            <f:else>
-                <div class="ratio ratio-1x1">
-            </f:else>
-        </f:if>
-        <iframe data-name="youtube" data-src="https://www.youtube-nocookie.com/embed/{youtubecode}" frameborder="0"
-            title="YouTube video player" allow="accelerometer;
-                    autoplay;
-                    clipboard-write;
-                    encrypted-media;
-                    gyroscope;
-                    picture-in-picture" allowfullscreen>
-        </iframe>
-        </div>
+    <f:if condition="({videoselector}==0) && {videocode}">
+        <f:then>
+            <f:if condition="{aspectratio}==0">
+                <f:then>
+                    <div class="ratio ratio-16x9">
+                </f:then>
+                <f:else if="{aspectratio}==1">
+                    <div class="ratio ratio-4x3">
+                </f:else>
+                <f:else if="{aspectratio}==2">
+                    <div class="ratio ratio-21x9">
+                </f:else>
+                <f:else>
+                    <div class="ratio ratio-1x1">
+                </f:else>
+            </f:if>
+                <iframe data-name="youtube" data-src="https://www.youtube-nocookie.com/embed/{videocode}" frameborder="0"
+                        title="YouTube video player" allow="accelerometer;
+                        autoplay;
+                        clipboard-write;
+                        encrypted-media;
+                        gyroscope;
+                        picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+        </f:then>
+        <f:else if="({videoselector}==1) && {videocode}">
+            <f:if condition="{aspectratio}==0">
+                <f:then>
+                    <div class="ratio ratio-16x9">
+                </f:then>
+                <f:else if="{aspectratio}==1">
+                    <div class="ratio ratio-4x3">
+                </f:else>
+                <f:else if="{aspectratio}==2">
+                    <div class="ratio ratio-21x9">
+                </f:else>
+                <f:else>
+                    <div class="ratio ratio-1x1">
+                </f:else>
+            </f:if>
+            <iframe
+                data-name="vimeo"
+                data-src="https://player.vimeo.com/video/{videocode}"
+                frameborder="0"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+            </div>
+        </f:else>
     </f:if>
 
 </f:section>
