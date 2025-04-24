@@ -7,10 +7,10 @@
                             <header/>
                             <body>
                                 <trans-unit id="typo3-contentblocks.klarovideo.title" xml:space="preserve">
-                                    <source>Video DSGVO konform</source>
+                                    <source>Video DSGVO-konform</source>
                                 </trans-unit>
                                 <trans-unit id="typo3-contentblocks.klarovideo.description" xml:space="preserve">
-                                    <source>Video DSGVO konform - klarovideo created by Content Block Builder.</source>
+                                    <source>Video DSGVO-konform - klarovideo created by Content Block Builder.</source>
                                 </trans-unit>
 
                     	<trans-unit id="typo3-contentblocks.klarovideo.videoselector.label" xml:space="preserve">
