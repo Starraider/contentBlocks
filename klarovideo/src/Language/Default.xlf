@@ -20,7 +20,7 @@
                             <source>YouTube-/Vimeo-Videocode</source>
                         </trans-unit>
                         <trans-unit id="typo3-contentblocks.klarovideo.videocode.description" xml:space="preserve">
-                            <source>The part after the = in the URL</source>
+                            <source>Die ID aus der Video URL</source>
                         </trans-unit>
                         <trans-unit id="typo3-contentblocks.klarovideo.aspectratio.label" xml:space="preserve">
                             <source>Video Seitenverhältnis</source>
