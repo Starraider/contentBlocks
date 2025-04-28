@@ -32,7 +32,7 @@
 							<source>Oberer Negativ-Abstand</source>
 						</trans-unit>
 						<trans-unit id="typo3-contentblocks.klarovideo.topmargin.description" xml:space="preserve">
-							<source>Zur Veringerung des Abstand zu vorangestellten Elementen wie z.B. einer Überschrift. (Wert in px)</source>
+							<source>Zur Verringerung des Abstand zu vorangestellten Elementen wie z.B. einer Überschrift. (Wert in px)</source>
 						</trans-unit>
                             </body>
                         </file>
