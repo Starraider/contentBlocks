@@ -1,17 +1,13 @@
 .moz-loadingspinner__hints p {
   display: none;
 }
-
 .moz-loadingspinner__hints p.active {
   display: block;
 }
-
 @media (min-width: 768px) {
   .moz-loadingspinner__desc {
     max-width: 75%;
   }
 }
-/*# sourceMappingURL=Frontend.css.map */
-/*# sourceMappingURL=Frontend.css.map */
 
 /*# sourceMappingURL=Frontend.css.map */
