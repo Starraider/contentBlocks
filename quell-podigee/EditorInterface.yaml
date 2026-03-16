@@ -1,0 +1,13 @@
+group: media
+fields:
+    - identifier: url
+      type: Text
+      properties:
+          max: '500'
+          size: '50'
+          default: ''
+          placeholder: 'https://podcastd10495.podigee.io/4-niederlassen-mit-plan/embed?context=external&theme=default'
+          required: true
+          trim: true
+          autocomplete: false
+

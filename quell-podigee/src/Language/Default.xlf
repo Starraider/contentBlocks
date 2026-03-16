@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+                    <xliff version="1.0">
+                        <file datatype="plaintext"
+                                original="messages"
+                                source-language="en"
+                                product-name="text">
+                            <header/>
+                            <body>
+                                <trans-unit id="typo3-contentblocks.quell-podigee.title" xml:space="preserve">
+                                    <source>Podigee Podcast DSGVO-konform</source>
+                                </trans-unit>
+                                <trans-unit id="typo3-contentblocks.quell-podigee.description" xml:space="preserve">
+                                    <source>Podigee Podcast DSGVO-konform - quell-podigee created by Content Block Builder.</source>
+                                </trans-unit>
+                                <trans-unit id="typo3-contentblocks.quell-podigee.podigeeurl.label" xml:space="preserve">
+                                    <source>Podigee Embed-URL</source>
+                                </trans-unit>
+                                <trans-unit id="typo3-contentblocks.quell-podigee.podigeeurl.description" xml:space="preserve">
+                                    <source>Die vollständige Podigee Embed-URL (z.B. https://podcastd10495.podigee.io/4-niederlassen-mit-plan/embed?context=external&amp;theme=default)</source>
+                                </trans-unit>
+                            </body>
+                        </file>
+                    </xliff>
+
