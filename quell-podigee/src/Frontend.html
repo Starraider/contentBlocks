@@ -1,0 +1,22 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns:dgvtbase="http://typo3.org/ns/Skom/dgvtbase/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+
+<f:section name="Main">
+    <f:if condition="{url}">
+        <f:variable name="cleanUrl">{url -> dgvtbase:extractIframeSrc()}</f:variable>
+        <div class="quell-podigee position-relative">
+            <iframe
+                data-name="podigee"
+                data-src="{cleanUrl}"
+                style="border: 0"
+                frameBorder="0"
+                height="151"
+                width="100%">
+            </iframe>
+        </div>
+    </f:if>
+</f:section>
+
+</html>

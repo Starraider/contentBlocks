@@ -1,0 +1,21 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:be="http://typo3.org/ns/TYPO3/CMS/Backend/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<f:asset.css identifier="content-block-quell-podigee-be" href="CB:quell-podigee/dist/EditorPreview.css" />
+
+<be:link.editRecord uid="{data.uid}" table="tt_content" id="element-tt_content-{data.uid}">
+    <div class="quell-podigee-preview">
+        <f:if condition="{url}">
+            <f:then>
+                <p><strong>Podigee Podcast</strong></p>
+                <p class="podigee-url">{url}</p>
+            </f:then>
+            <f:else>
+                <p><em>Bitte eine Podigee Embed-URL eingeben.</em></p>
+            </f:else>
+        </f:if>
+    </div>
+</be:link.editRecord>
+
+</html>
+
