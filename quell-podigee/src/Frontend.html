@@ -4,9 +4,9 @@
 <f:layout name="Default" />
 
 <f:section name="Main">
-    <f:if condition="{podigeeurl}">
-        <f:variable name="cleanUrl">{podigeeurl -> dgvtbase:extractIframeSrc()}</f:variable>
-        <div class="quell-podigee">
+    <f:if condition="{url}">
+        <f:variable name="cleanUrl">{url -> dgvtbase:extractIframeSrc()}</f:variable>
+        <div class="quell-podigee position-relative">
             <iframe
                 data-name="podigee"
                 data-src="{cleanUrl}"
