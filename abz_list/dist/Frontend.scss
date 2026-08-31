@@ -5,6 +5,7 @@
 @include new(abz-list, component) {
     @include has(header){
         font-family: $headings-font-family;
+        font-weight: bold;
         font-size: 1.1rem;
         color: $white;
         background-color: #8dc7da;
@@ -25,6 +26,7 @@
         font-size: $font-size-base;
         color: black;
         font-family: $headings-font-family;
+        font-weight: bold;
         a, a:visited, a:focus {
             color: black !important;
         }
